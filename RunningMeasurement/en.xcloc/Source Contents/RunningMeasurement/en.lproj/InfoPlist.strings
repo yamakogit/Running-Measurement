@@ -1,0 +1,12 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "K Running";
+/* Bundle name */
+"CFBundleName" = "RunningMeasurement";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "ランニング計測中にアプリ内で\n写真を撮影するために使用します";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "ランニング計測での現在地と\nGPS軌跡の表示\n(バックグラウンドでも使用します)\n地図画面での現在地表示のため使用します\n（位置情報取得を許可しない場合、\nこのアプリは正しく作動しません）";
+/* Privacy - Motion Usage Description */
+"NSMotionUsageDescription" = "ランニング計測の際、\n歩数を計測するために使用します";
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "ランニング計測中に\nアプリ内で撮影した\n写真を保存するために使用します";

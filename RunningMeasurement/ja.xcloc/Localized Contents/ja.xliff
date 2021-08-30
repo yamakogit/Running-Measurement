@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="RunningMeasurement/Base.lproj/Main.storyboard" source-language="en" target-language="ja" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+    </header>
+    <body>
+      <trans-unit id="0WM-2R-zqs.text" xml:space="preserve">
+        <source>0分0秒</source>
+        <target>0分0秒</target>
+        <note>Class = "UILabel"; text = "0分0秒"; ObjectID = "0WM-2R-zqs";</note>
+      </trans-unit>
+      <trans-unit id="0zn-dJ-81W.normalTitle" xml:space="preserve">
+        <source>戻る</source>
+        <target>戻る</target>
+        <note>Class = "UIButton"; normalTitle = "戻る"; ObjectID = "0zn-dJ-81W";</note>
+      </trans-unit>
+      <trans-unit id="3Ix-bp-BmQ.title" xml:space="preserve">
+        <source>計測履歴</source>
+        <target>計測履歴</target>
+        <note>Class = "UINavigationItem"; title = "計測履歴"; ObjectID = "3Ix-bp-BmQ";</note>
+      </trans-unit>
+      <trans-unit id="6Y0-un-ZYD.text" xml:space="preserve">
+        <source>ペース平均</source>
+        <target>ペース平均</target>
+        <note>Class = "UILabel"; text = "ペース平均"; ObjectID = "6Y0-un-ZYD";</note>
+      </trans-unit>
+      <trans-unit id="7bp-hU-jh0.title" xml:space="preserve">
+        <source>ランニング計測中</source>
+        <target>ランニング計測中</target>
+        <note>Class = "UINavigationItem"; title = "ランニング計測中"; ObjectID = "7bp-hU-jh0";</note>
+      </trans-unit>
+      <trans-unit id="8bB-Qx-A5m.text" xml:space="preserve">
+        <source>時間</source>
+        <target>時間</target>
+        <note>Class = "UILabel"; text = "時間"; ObjectID = "8bB-Qx-A5m";</note>
+      </trans-unit>
+      <trans-unit id="E6x-C6-rta.text" xml:space="preserve">
+        <source>毎秒歩数</source>
+        <target>毎秒歩数</target>
+        <note>Class = "UILabel"; text = "毎秒歩数"; ObjectID = "E6x-C6-rta";</note>
+      </trans-unit>
+      <trans-unit id="IXm-Vc-Vje.title" xml:space="preserve">
+        <source>地図</source>
+        <target>地図</target>
+        <note>Class = "UINavigationItem"; title = "地図"; ObjectID = "IXm-Vc-Vje";</note>
+      </trans-unit>
+      <trans-unit id="Jj2-oF-XXb.title" xml:space="preserve">
+        <source>ランニング</source>
+        <target>ランニング</target>
+        <note>Class = "UINavigationItem"; title = "ランニング"; ObjectID = "Jj2-oF-XXb";</note>
+      </trans-unit>
+      <trans-unit id="Kn9-y5-Iwh.title" xml:space="preserve">
+        <source>ホーム</source>
+        <target>ホーム</target>
+        <note>Class = "UINavigationItem"; title = "ホーム"; ObjectID = "Kn9-y5-Iwh";</note>
+      </trans-unit>
+      <trans-unit id="LhL-sr-C6e.text" xml:space="preserve">
+        <source>距離</source>
+        <target>距離</target>
+        <note>Class = "UILabel"; text = "距離"; ObjectID = "LhL-sr-C6e";</note>
+      </trans-unit>
+      <trans-unit id="MTK-Df-cFe.text" xml:space="preserve">
+        <source>00:00/km</source>
+        <target>00:00/km</target>
+        <note>Class = "UILabel"; text = "00:00/km"; ObjectID = "MTK-Df-cFe";</note>
+      </trans-unit>
+      <trans-unit id="RPm-tW-2QX.title" xml:space="preserve">
+        <source>ランニング</source>
+        <target>ランニング</target>
+        <note>Class = "UITabBarItem"; title = "ランニング"; ObjectID = "RPm-tW-2QX";</note>
+      </trans-unit>
+      <trans-unit id="SAe-vP-VIa.text" xml:space="preserve">
+        <source>ペース平均</source>
+        <target>ペース平均</target>
+        <note>Class = "UILabel"; text = "ペース平均"; ObjectID = "SAe-vP-VIa";</note>
+      </trans-unit>
+      <trans-unit id="STv-h5-rxG.normalTitle" xml:space="preserve">
+        <source>戻る</source>
+        <target>戻る</target>
+        <note>Class = "UIButton"; normalTitle = "戻る"; ObjectID = "STv-h5-rxG";</note>
+      </trans-unit>
+      <trans-unit id="SgJ-ZI-UW7.placeholder" xml:space="preserve">
+        <source>🔍地点を検索</source>
+        <target>🔍地点を検索</target>
+        <note>Class = "UITextField"; placeholder = "🔍地点を検索"; ObjectID = "SgJ-ZI-UW7";</note>
+      </trans-unit>
+      <trans-unit id="Un9-0K-mt1.normalTitle" xml:space="preserve">
+        <source>早速ランニングへ</source>
+        <target>早速ランニングへ</target>
+        <note>Class = "UIButton"; normalTitle = "早速ランニングへ"; ObjectID = "Un9-0K-mt1";</note>
+      </trans-unit>
+      <trans-unit id="XU8-Cu-f2p.text" xml:space="preserve">
+        <source>4 歩/秒</source>
+        <target>4 歩/秒</target>
+        <note>Class = "UILabel"; text = "4 歩/秒"; ObjectID = "XU8-Cu-f2p";</note>
+      </trans-unit>
+      <trans-unit id="ZPO-0z-yQa.title" xml:space="preserve">
+        <source>計測履歴</source>
+        <target>計測履歴</target>
+        <note>Class = "UITabBarItem"; title = "計測履歴"; ObjectID = "ZPO-0z-yQa";</note>
+      </trans-unit>
+      <trans-unit id="c1x-9u-b94.text" xml:space="preserve">
+        <source>0km0 m</source>
+        <target>0km0 m</target>
+        <note>Class = "UILabel"; text = "0km0 m"; ObjectID = "c1x-9u-b94";</note>
+      </trans-unit>
+      <trans-unit id="c7f-O7-3iR.text" xml:space="preserve">
+        <source>お疲れ様でした！</source>
+        <target>お疲れ様でした！</target>
+        <note>Class = "UILabel"; text = "お疲れ様でした！"; ObjectID = "c7f-O7-3iR";</note>
+      </trans-unit>
+      <trans-unit id="dvi-qv-Pb8.text" xml:space="preserve">
+        <source>距離</source>
+        <target>距離</target>
+        <note>Class = "UILabel"; text = "距離"; ObjectID = "dvi-qv-Pb8";</note>
+      </trans-unit>
+      <trans-unit id="h7L-W2-pGg.text" xml:space="preserve">
+        <source>毎秒歩数</source>
+        <target>毎秒歩数</target>
+        <note>Class = "UILabel"; text = "毎秒歩数"; ObjectID = "h7L-W2-pGg";</note>
+      </trans-unit>
+      <trans-unit id="jEp-w9-Vsd.text" xml:space="preserve">
+        <source>Detail</source>
+        <target>Detail</target>
+        <note>Class = "UILabel"; text = "Detail"; ObjectID = "jEp-w9-Vsd";</note>
+      </trans-unit>
+      <trans-unit id="jPe-Lf-SS7.title" xml:space="preserve">
+        <source>ホーム</source>
+        <target>ホーム</target>
+        <note>Class = "UITabBarItem"; title = "ホーム"; ObjectID = "jPe-Lf-SS7";</note>
+      </trans-unit>
+      <trans-unit id="klb-hf-e9W.text" xml:space="preserve">
+        <source> K runnning へようこそ！</source>
+        <target> K runnning へようこそ！</target>
+        <note>Class = "UILabel"; text = " K runnning へようこそ！"; ObjectID = "klb-hf-e9W";</note>
+      </trans-unit>
+      <trans-unit id="oHN-4V-OGp.title" xml:space="preserve">
+        <source>トップへ戻る</source>
+        <target>トップへ戻る</target>
+        <note>Class = "UIBarButtonItem"; title = "トップへ戻る"; ObjectID = "oHN-4V-OGp";</note>
+      </trans-unit>
+      <trans-unit id="obs-Uo-oth.text" xml:space="preserve">
+        <source>計測中</source>
+        <target>計測中</target>
+        <note>Class = "UILabel"; text = "計測中"; ObjectID = "obs-Uo-oth";</note>
+      </trans-unit>
+      <trans-unit id="qiF-4h-zTA.text" xml:space="preserve">
+        <source>Title</source>
+        <target>Title</target>
+        <note>Class = "UILabel"; text = "Title"; ObjectID = "qiF-4h-zTA";</note>
+      </trans-unit>
+      <trans-unit id="uR0-Yy-6U2.normalTitle" xml:space="preserve">
+        <source>戻る</source>
+        <target>戻る</target>
+        <note>Class = "UIButton"; normalTitle = "戻る"; ObjectID = "uR0-Yy-6U2";</note>
+      </trans-unit>
+      <trans-unit id="xgc-Js-MVF.text" xml:space="preserve">
+        <source>時間</source>
+        <target>時間</target>
+        <note>Class = "UILabel"; text = "時間"; ObjectID = "xgc-Js-MVF";</note>
+      </trans-unit>
+      <trans-unit id="y0t-8u-XzX.title" xml:space="preserve">
+        <source>地図</source>
+        <target>地図</target>
+        <note>Class = "UITabBarItem"; title = "地図"; ObjectID = "y0t-8u-XzX";</note>
+      </trans-unit>
+      <trans-unit id="yhb-NX-Zwe.title" xml:space="preserve">
+        <source>6月9日 ラン</source>
+        <target>6月9日 ラン</target>
+        <note>Class = "UINavigationItem"; title = "6月9日 ラン"; ObjectID = "yhb-NX-Zwe";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="RunningMeasurement/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.5" build-num="12E262"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>K Running</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>RunningMeasurement</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source>ランニング計測中にアプリ内で
+写真を撮影するために使用します</source>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>ランニング計測での現在地と
+GPS軌跡の表示
+(バックグラウンドでも使用します)
+地図画面での現在地表示のため使用します
+（位置情報取得を許可しない場合、
+このアプリは正しく作動しません）</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSMotionUsageDescription" xml:space="preserve">
+        <source>ランニング計測の際、
+歩数を計測するために使用します</source>
+        <note>Privacy - Motion Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription" xml:space="preserve">
+        <source>ランニング計測中に
+アプリ内で撮影した
+写真を保存するために使用します</source>
+        <note>Privacy - Photo Library Additions Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
