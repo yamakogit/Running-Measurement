@@ -107,7 +107,6 @@
 		D3466C0F24DB197100EE7685 = {
 			isa = PBXGroup;
 			children = (
-				537CA32826DC5F230021FEBF /* InfoPlist.strings */,
 				D3466C1A24DB197100EE7685 /* RunningMeasurement */,
 				D3466C3C24DB197300EE7685 /* RunningMeasurementUITests */,
 				D3466C3124DB197200EE7685 /* RunningMeasurementTests */,
@@ -148,6 +147,7 @@
 				D3466C2624DB197200EE7685 /* LaunchScreen.storyboard */,
 				D3466C2124DB197100EE7685 /* Main.storyboard */,
 				E1B45F9425B45FED0034A353 /* TabBarViewController.swift */,
+				537CA32826DC5F230021FEBF /* InfoPlist.strings */,
 			);
 			path = RunningMeasurement;
 			sourceTree = "<group>";
