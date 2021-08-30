@@ -1,0 +1,99 @@
+
+/* Class = "UILabel"; text = "0分0秒"; ObjectID = "0WM-2R-zqs"; */
+"0WM-2R-zqs.text" = "0分0秒";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "0zn-dJ-81W"; */
+"0zn-dJ-81W.normalTitle" = "戻る";
+
+/* Class = "UINavigationItem"; title = "計測履歴"; ObjectID = "3Ix-bp-BmQ"; */
+"3Ix-bp-BmQ.title" = "計測履歴";
+
+/* Class = "UILabel"; text = "ペース平均"; ObjectID = "6Y0-un-ZYD"; */
+"6Y0-un-ZYD.text" = "ペース平均";
+
+/* Class = "UINavigationItem"; title = "ランニング計測中"; ObjectID = "7bp-hU-jh0"; */
+"7bp-hU-jh0.title" = "ランニング計測中";
+
+/* Class = "UILabel"; text = "時間"; ObjectID = "8bB-Qx-A5m"; */
+"8bB-Qx-A5m.text" = "時間";
+
+/* Class = "UILabel"; text = "毎秒歩数"; ObjectID = "E6x-C6-rta"; */
+"E6x-C6-rta.text" = "毎秒歩数";
+
+/* Class = "UINavigationItem"; title = "地図"; ObjectID = "IXm-Vc-Vje"; */
+"IXm-Vc-Vje.title" = "地図";
+
+/* Class = "UINavigationItem"; title = "ランニング"; ObjectID = "Jj2-oF-XXb"; */
+"Jj2-oF-XXb.title" = "ランニング";
+
+/* Class = "UINavigationItem"; title = "ホーム"; ObjectID = "Kn9-y5-Iwh"; */
+"Kn9-y5-Iwh.title" = "ホーム";
+
+/* Class = "UILabel"; text = "距離"; ObjectID = "LhL-sr-C6e"; */
+"LhL-sr-C6e.text" = "距離";
+
+/* Class = "UILabel"; text = "00:00/km"; ObjectID = "MTK-Df-cFe"; */
+"MTK-Df-cFe.text" = "00:00/km";
+
+/* Class = "UITabBarItem"; title = "ランニング"; ObjectID = "RPm-tW-2QX"; */
+"RPm-tW-2QX.title" = "ランニング";
+
+/* Class = "UILabel"; text = "ペース平均"; ObjectID = "SAe-vP-VIa"; */
+"SAe-vP-VIa.text" = "ペース平均";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "STv-h5-rxG"; */
+"STv-h5-rxG.normalTitle" = "戻る";
+
+/* Class = "UITextField"; placeholder = "🔍地点を検索"; ObjectID = "SgJ-ZI-UW7"; */
+"SgJ-ZI-UW7.placeholder" = "🔍地点を検索";
+
+/* Class = "UIButton"; normalTitle = "早速ランニングへ"; ObjectID = "Un9-0K-mt1"; */
+"Un9-0K-mt1.normalTitle" = "早速ランニングへ";
+
+/* Class = "UILabel"; text = "4 歩/秒"; ObjectID = "XU8-Cu-f2p"; */
+"XU8-Cu-f2p.text" = "4 歩/秒";
+
+/* Class = "UITabBarItem"; title = "計測履歴"; ObjectID = "ZPO-0z-yQa"; */
+"ZPO-0z-yQa.title" = "計測履歴";
+
+/* Class = "UILabel"; text = "0km0 m"; ObjectID = "c1x-9u-b94"; */
+"c1x-9u-b94.text" = "0km0 m";
+
+/* Class = "UILabel"; text = "お疲れ様でした！"; ObjectID = "c7f-O7-3iR"; */
+"c7f-O7-3iR.text" = "お疲れ様でした！";
+
+/* Class = "UILabel"; text = "距離"; ObjectID = "dvi-qv-Pb8"; */
+"dvi-qv-Pb8.text" = "距離";
+
+/* Class = "UILabel"; text = "毎秒歩数"; ObjectID = "h7L-W2-pGg"; */
+"h7L-W2-pGg.text" = "毎秒歩数";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "jEp-w9-Vsd"; */
+"jEp-w9-Vsd.text" = "Detail";
+
+/* Class = "UITabBarItem"; title = "ホーム"; ObjectID = "jPe-Lf-SS7"; */
+"jPe-Lf-SS7.title" = "ホーム";
+
+/* Class = "UILabel"; text = " K runnning へようこそ！"; ObjectID = "klb-hf-e9W"; */
+"klb-hf-e9W.text" = " K runnning へようこそ！";
+
+/* Class = "UIBarButtonItem"; title = "トップへ戻る"; ObjectID = "oHN-4V-OGp"; */
+"oHN-4V-OGp.title" = "トップへ戻る";
+
+/* Class = "UILabel"; text = "計測中"; ObjectID = "obs-Uo-oth"; */
+"obs-Uo-oth.text" = "計測中";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qiF-4h-zTA"; */
+"qiF-4h-zTA.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "uR0-Yy-6U2"; */
+"uR0-Yy-6U2.normalTitle" = "戻る";
+
+/* Class = "UILabel"; text = "時間"; ObjectID = "xgc-Js-MVF"; */
+"xgc-Js-MVF.text" = "時間";
+
+/* Class = "UITabBarItem"; title = "地図"; ObjectID = "y0t-8u-XzX"; */
+"y0t-8u-XzX.title" = "地図";
+
+/* Class = "UINavigationItem"; title = "6月9日 ラン"; ObjectID = "yhb-NX-Zwe"; */
+"yhb-NX-Zwe.title" = "6月9日 ラン";

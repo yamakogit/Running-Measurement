@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		537CA32626DC5F230021FEBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 537CA32826DC5F230021FEBF /* InfoPlist.strings */; };
 		D3466C1C24DB197100EE7685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3466C1B24DB197100EE7685 /* AppDelegate.swift */; };
 		D3466C1E24DB197100EE7685 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3466C1D24DB197100EE7685 /* SceneDelegate.swift */; };
 		D3466C2024DB197100EE7685 /* StartRunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3466C1F24DB197100EE7685 /* StartRunningViewController.swift */; };
@@ -46,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		537CA32226DC5ED30021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		537CA32326DC5ED40021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		537CA32726DC5F230021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3466C1824DB197100EE7685 /* RunningMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3466C1B24DB197100EE7685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3466C1D24DB197100EE7685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		D3466C0F24DB197100EE7685 = {
 			isa = PBXGroup;
 			children = (
+				537CA32826DC5F230021FEBF /* InfoPlist.strings */,
 				D3466C1A24DB197100EE7685 /* RunningMeasurement */,
 				D3466C3C24DB197300EE7685 /* RunningMeasurementUITests */,
 				D3466C3124DB197200EE7685 /* RunningMeasurementTests */,
@@ -259,6 +264,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = D3466C0F24DB197100EE7685;
 			productRefGroup = D3466C1924DB197100EE7685 /* Products */;
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3466C2824DB197200EE7685 /* LaunchScreen.storyboard in Resources */,
+				537CA32626DC5F230021FEBF /* InfoPlist.strings in Resources */,
 				D3466C2524DB197200EE7685 /* Assets.xcassets in Resources */,
 				D3466C2324DB197100EE7685 /* Main.storyboard in Resources */,
 			);
@@ -353,10 +360,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		537CA32826DC5F230021FEBF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537CA32726DC5F230021FEBF /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D3466C2124DB197100EE7685 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D3466C2224DB197100EE7685 /* Base */,
+				537CA32326DC5ED40021FEBF /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -365,6 +381,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3466C2724DB197200EE7685 /* Base */,
+				537CA32226DC5ED30021FEBF /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -376,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -438,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
