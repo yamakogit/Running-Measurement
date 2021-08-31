@@ -1,6 +1,6 @@
 
 /* Class = "UILabel"; text = "0'0\""; ObjectID = "0WM-2R-zqs"; */
-"0WM-2R-zqs.text" = "0'0\"";  //関係なし
+//"0WM-2R-zqs.text" = "0'0\"";
 
 /* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "0zn-dJ-81W"; */
 "0zn-dJ-81W.normalTitle" = "戻る";  //関係なし
@@ -51,7 +51,7 @@
 "Un9-0K-mt1.normalTitle" = "早速ランニングへ";
 
 /* Class = "UILabel"; text = "4 steps/s"; ObjectID = "XU8-Cu-f2p"; */
-"XU8-Cu-f2p.text" = "4 歩/秒";
+"XU8-Cu-f2p.text" = "4歩/秒";
 
 /* Class = "UITabBarItem"; title = "History"; ObjectID = "ZPO-0z-yQa"; */
 "ZPO-0z-yQa.title" = "計測履歴";

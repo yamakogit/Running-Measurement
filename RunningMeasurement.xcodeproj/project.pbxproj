@@ -47,9 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5301D7DC26DCCC260064A5E0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		537CA32226DC5ED30021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		537CA32726DC5F230021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		537E86BE26DE0EED00BFD025 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D3466C1824DB197100EE7685 /* RunningMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3466C1B24DB197100EE7685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3466C1D24DB197100EE7685 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -372,7 +372,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3466C2224DB197100EE7685 /* Base */,
-				5301D7DC26DCCC260064A5E0 /* ja */,
+				537E86BE26DE0EED00BFD025 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
