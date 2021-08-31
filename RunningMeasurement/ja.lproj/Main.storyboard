@@ -24,14 +24,14 @@
                                     <constraint firstAttribute="height" constant="40" id="Ea3-Am-0pF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <state key="normal" title="Let's Start Running!">
+                                <state key="normal" title="早速ランニングへ！">
                                     <color key="titleShadowColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="goBackRunning:" destination="T9L-Kt-bDR" eventType="touchUpInside" id="6en-tE-Dee"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klb-hf-e9W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K runningへようこそ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klb-hf-e9W">
                                 <rect key="frame" x="0.0" y="40" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.1176470588" blue="0.38431372549999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="3532" y="-1383"/>
         </scene>
-        <!--Running-->
+        <!--ランニング-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="StartRunning" id="BYZ-38-t0r" customClass="StartRunningViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
@@ -235,10 +235,9 @@
                                 <inset key="contentEdgeInsets" minX="24" minY="8" maxX="24" maxY="8"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Start">
+                                        <fragment content="スタート">
                                             <attributes>
                                                 <font key="NSFont" size="40" name="HiraMaruProN-W4"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -267,7 +266,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="To App store">
+                                        <fragment content="App store へ">
                                             <attributes>
                                                 <color key="NSColor" systemColor="linkColor"/>
                                                 <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
@@ -299,7 +298,7 @@
                             <constraint firstItem="5GB-h8-tpY" firstAttribute="top" secondItem="Djh-YP-mDP" secondAttribute="bottom" id="tHZ-Ll-TfI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Running" id="Jj2-oF-XXb">
+                    <navigationItem key="navigationItem" title="ランニング" id="Jj2-oF-XXb">
                         <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="Y8H-Y5-48V">
                             <connections>
                                 <action selector="goRunningCommentary:" destination="BYZ-38-t0r" id="J4E-zL-R56"/>
@@ -316,7 +315,7 @@
             </objects>
             <point key="canvasLocation" x="1949.2753623188407" y="-555.16304347826087"/>
         </scene>
-        <!--Running-->
+        <!--ランニング計測中-->
         <scene sceneID="X9C-dL-VPq">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="dTf-dU-UFi" customClass="RunningViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
@@ -332,7 +331,7 @@
                                         <inset key="contentEdgeInsets" minX="24" minY="16" maxX="24" maxY="16"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Finish">
+                                                <fragment content="終了">
                                                     <attributes>
                                                         <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -354,7 +353,7 @@
                                         <inset key="contentEdgeInsets" minX="24" minY="16" maxX="24" maxY="16"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Stop">
+                                                <fragment content="一時停止">
                                                     <attributes>
                                                         <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -389,7 +388,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-WF-U8H">
                                         <rect key="frame" x="0.0" y="52.666666666666664" width="398" height="28.666666666666664"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhL-sr-C6e">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距離" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhL-sr-C6e">
                                                 <rect key="frame" x="0.0" y="0.0" width="199" height="28.666666666666668"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="199" id="JNF-83-EJA"/>
@@ -399,7 +398,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pace Avg." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y0-un-ZYD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ペース平均" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Y0-un-ZYD">
                                                 <rect key="frame" x="199" y="0.0" width="199" height="28.666666666666668"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="199" id="2ct-Sn-fdx"/>
@@ -414,13 +413,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-tb-Fjh">
                                         <rect key="frame" x="0.0" y="105.33333333333334" width="398" height="28.666666666666657"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-Qx-A5m">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bB-Qx-A5m">
                                                 <rect key="frame" x="0.0" y="0.0" width="132.66666666666666" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps/s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6x-C6-rta">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎秒歩数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6x-C6-rta">
                                                 <rect key="frame" x="132.66666666666669" y="0.0" width="132.66666666666669" height="28.666666666666668"/>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                                 <nil key="textColor"/>
@@ -458,8 +457,8 @@
                             <constraint firstItem="EuS-h1-UE9" firstAttribute="top" secondItem="4mZ-Cg-GDI" secondAttribute="bottom" id="uDs-J3-iyL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Running" id="7bp-hU-jh0">
-                        <barButtonItem key="leftBarButtonItem" title="Back to TOP" springLoaded="YES" style="done" id="oHN-4V-OGp">
+                    <navigationItem key="navigationItem" title="ランニング計測中" id="7bp-hU-jh0">
+                        <barButtonItem key="leftBarButtonItem" title="トップへ戻る" springLoaded="YES" style="done" id="oHN-4V-OGp">
                             <connections>
                                 <action selector="hidesBackItem" destination="dTf-dU-UFi" id="Snu-Lc-X1v"/>
                             </connections>
@@ -481,7 +480,7 @@
             </objects>
             <point key="canvasLocation" x="2770" y="-555"/>
         </scene>
-        <!--Map-->
+        <!--地図-->
         <scene sceneID="NdK-3U-mtW">
             <objects>
                 <viewController id="4fz-h9-fc2" customClass="MapViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
@@ -492,7 +491,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-i6-b6J">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍地点を検索" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
                                 <rect key="frame" x="2" y="47" width="410" height="35"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -510,7 +509,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Switching">
+                                        <fragment content="地図切替">
                                             <attributes>
                                                 <font key="NSFont" size="20" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -598,7 +597,7 @@
                             <constraint firstItem="aHg-i6-b6J" firstAttribute="top" secondItem="F0h-uK-avh" secondAttribute="top" id="zEA-fO-v8B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Map" id="IXm-Vc-Vje">
+                    <navigationItem key="navigationItem" title="地図" id="IXm-Vc-Vje">
                         <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="i7l-lZ-Pgr">
                             <connections>
                                 <action selector="goMapCommentary:" destination="4fz-h9-fc2" id="KAS-Ln-e1v"/>
@@ -631,7 +630,7 @@
                                             <constraint firstAttribute="width" constant="200" id="28e-hC-PWd"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Avg. Steps/s">
+                                            <fragment content="平均毎秒歩数">
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
@@ -667,7 +666,7 @@
                                             <constraint firstAttribute="width" constant="200" id="aM6-wZ-uz9"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Save Time">
+                                            <fragment content="ラン保存時刻">
                                                 <attributes>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -699,7 +698,7 @@
                                             <constraint firstAttribute="width" constant="200" id="DQR-yQ-MXz"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Time">
+                                            <fragment content="タイム">
                                                 <attributes>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -731,7 +730,7 @@
                                             <constraint firstAttribute="width" constant="200" id="H3Z-Ge-UKx"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Pace Avg.">
+                                            <fragment content="ペース平均">
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
@@ -764,7 +763,7 @@
                                             <constraint firstAttribute="width" constant="200" id="B7e-Ga-6H5"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="Distance">
+                                            <fragment content="距離">
                                                 <attributes>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -826,7 +825,7 @@
             </objects>
             <point key="canvasLocation" x="2769.5652173913045" y="813.58695652173924"/>
         </scene>
-        <!--History-->
+        <!--計測履歴-->
         <scene sceneID="beA-c5-ssY">
             <objects>
                 <viewController id="RTE-Ei-RPz" customClass="HistoryViewController" customModule="RunningMeasurement" sceneMemberID="viewController">
@@ -874,7 +873,7 @@
                             <constraint firstItem="uv4-Nw-E9p" firstAttribute="top" secondItem="NR0-35-YrM" secondAttribute="top" id="yGv-Ih-qn2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="History" id="3Ix-bp-BmQ">
+                    <navigationItem key="navigationItem" title="計測履歴" id="3Ix-bp-BmQ">
                         <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="03q-Fy-JTh">
                             <connections>
                                 <action selector="goHistoryCommentary:" destination="RTE-Ei-RPz" id="e2n-MJ-ZRo"/>
@@ -911,11 +910,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--Running-->
+        <!--ランニング-->
         <scene sceneID="TLa-cI-JVS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="467-xG-mGV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Running" image="Running" id="RPm-tW-2QX"/>
+                    <tabBarItem key="tabBarItem" title="ランニング" image="Running" id="RPm-tW-2QX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yhf-sZ-CVf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -931,7 +930,7 @@
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="-554.46428571428567"/>
         </scene>
-        <!--Save-->
+        <!--保存-->
         <scene sceneID="hIh-aU-v4M">
             <objects>
                 <viewController id="q0c-lt-pzI" customClass="SaveRunningViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
@@ -939,7 +938,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD JOB!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-O7-3iR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="お疲れ様でした！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7f-O7-3iR">
                                 <rect key="frame" x="32" y="94" width="350" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="mK9-JN-6wP"/>
@@ -956,7 +955,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Save">
+                                        <fragment content="保存">
                                             <attributes>
                                                 <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -969,7 +968,7 @@
                                     <action selector="tapSaveButton" destination="q0c-lt-pzI" eventType="touchUpInside" id="hCG-Sm-dXr"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvi-qv-Pb8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距離" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvi-qv-Pb8">
                                 <rect key="frame" x="28" y="439" width="180" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="0sn-On-NMq"/>
@@ -988,7 +987,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-W2-pGg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="毎秒歩数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-W2-pGg">
                                 <rect key="frame" x="28" y="556" width="180" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="BN7-6f-q8y"/>
@@ -998,7 +997,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-Js-MVF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgc-Js-MVF">
                                 <rect key="frame" x="28" y="517" width="180" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="29" id="o3y-Lc-RMa"/>
@@ -1017,7 +1016,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pace Avg." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-vP-VIa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ペース平均" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAe-vP-VIa">
                                 <rect key="frame" x="28" y="478" width="180" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="X7L-UV-2Ug"/>
@@ -1095,7 +1094,7 @@
                             <constraint firstItem="q20-Ja-6DT" firstAttribute="centerY" secondItem="QdD-Nv-RiD" secondAttribute="centerY" id="zru-iN-hE8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="dzC-B7-Ovd"/>
+                    <navigationItem key="navigationItem" title="保存" id="dzC-B7-Ovd"/>
                     <connections>
                         <outlet property="activityIndicator" destination="q20-Ja-6DT" id="R3N-GL-Cuc"/>
                         <outlet property="cadenceLabel" destination="XU8-Cu-f2p" id="a1s-nf-z7X"/>
@@ -1109,11 +1108,11 @@
             </objects>
             <point key="canvasLocation" x="3531.884057971015" y="-555.16304347826087"/>
         </scene>
-        <!--History-->
+        <!--計測履歴-->
         <scene sceneID="Hjc-9V-6ai">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nvB-3C-sDB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="History" image="History" id="ZPO-0z-yQa"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="計測履歴" image="History" id="ZPO-0z-yQa"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RTH-29-q7C"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vw4-A6-ebW">
@@ -1130,11 +1129,11 @@
             </objects>
             <point key="canvasLocation" x="1040.5797101449275" y="813.61607142857144"/>
         </scene>
-        <!--Home-->
+        <!--ホーム-->
         <scene sceneID="WFu-0z-SUM">
             <objects>
                 <navigationController id="qJf-MB-Zy0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="jPe-Lf-SS7"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="jPe-Lf-SS7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGG-q0-GSl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1148,7 +1147,7 @@
             </objects>
             <point key="canvasLocation" x="1039" y="1639"/>
         </scene>
-        <!--Home-->
+        <!--ホーム-->
         <scene sceneID="jIK-Qu-vYV">
             <objects>
                 <viewController id="jXF-2t-anU" customClass="HomeViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
@@ -1169,7 +1168,7 @@
                                     <constraint firstAttribute="height" constant="36" id="Fo7-iE-UqX"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Update Lately Info.">
+                                    <fragment content="アップデート最新情報">
                                         <attributes>
                                             <color key="NSColor" red="0.95882171390000004" green="0.80414956810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="25" name="HiraMaruProN-W4"/>
@@ -1200,7 +1199,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="To App Store">
+                                        <fragment content="App Store へ">
                                             <attributes>
                                                 <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1219,7 +1218,7 @@
                                     <constraint firstAttribute="height" constant="36" id="qnM-US-078"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="K running Instructions">
+                                    <fragment content="取扱説明書">
                                         <attributes>
                                             <color key="NSColor" red="0.95882171390000004" green="0.80414956810000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="25" name="HiraMaruProN-W4"/>
@@ -1239,7 +1238,7 @@
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Watch Instructions">
+                                        <fragment content="取扱説明書を見る">
                                             <attributes>
                                                 <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1259,8 +1258,8 @@
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">Report Defect
-Suggest New Function</string>
+                                        <string key="content">不具合を報告
+新らたな機能を提案</string>
                                         <attributes>
                                             <color key="NSColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
@@ -1280,7 +1279,7 @@ Suggest New Function</string>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="To Input Form">
+                                        <fragment content="入力フォームへ">
                                             <attributes>
                                                 <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1299,7 +1298,7 @@ Suggest New Function</string>
                                     <constraint firstAttribute="height" constant="36" id="NCU-Mj-rkK"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="＜Ver.Infomation＞">
+                                    <fragment content="バージョン情報">
                                         <attributes>
                                             <color key="NSColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
@@ -1338,7 +1337,7 @@ Suggest New Function</string>
                                 </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Watch New Function">
+                                        <fragment content="新機能を見る">
                                             <attributes>
                                                 <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1395,7 +1394,7 @@ Suggest New Function</string>
                             <constraint firstItem="dyb-Dd-IVI" firstAttribute="leading" secondItem="x8L-4u-a2V" secondAttribute="leading" constant="10" id="zej-xN-rs5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Kn9-y5-Iwh"/>
+                    <navigationItem key="navigationItem" title="ホーム" id="Kn9-y5-Iwh"/>
                     <connections>
                         <outlet property="webView" destination="KeE-CL-9iB" id="HR0-ua-JYp"/>
                         <segue destination="T9L-Kt-bDR" kind="showDetail" identifier="Commentary" id="zGJ-Vu-VIc"/>
@@ -1405,11 +1404,11 @@ Suggest New Function</string>
             </objects>
             <point key="canvasLocation" x="1950.7246376811595" y="1638.5869565217392"/>
         </scene>
-        <!--Map-->
+        <!--地図-->
         <scene sceneID="jO7-aq-aEM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yif-X8-3Ae" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="y0t-8u-XzX"/>
+                    <tabBarItem key="tabBarItem" title="地図" image="Map" id="y0t-8u-XzX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="azB-Oj-pD2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
