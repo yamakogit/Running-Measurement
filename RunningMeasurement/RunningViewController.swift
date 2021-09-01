@@ -83,6 +83,23 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     var mater: Int = 0
 //↑〜追加 8/18 m表示→ km m 表示に変更
     
+    //ここから
+    let goodRun = NSLocalizedString("Good Run!", comment: "")
+    let letsRun = NSLocalizedString("Let's Run!", comment: "")
+    let unit_cadence = NSLocalizedString("steps/s", comment: "")
+    let backTop_alertTitle = NSLocalizedString("Back to TOP?", comment: "")
+    let backTop_alertmessage = NSLocalizedString("If you don't save this running record, it's delete.", comment: "")
+    let backTop_alertbuckButtonTitle = NSLocalizedString("Back to TOP", comment: "")
+    let backTop_alertcancelButtonTitle = NSLocalizedString("Cancel", comment: "")
+
+    
+    let message_passed = NSLocalizedString("passed!", comment: "")
+    let message_totalDistance = NSLocalizedString("Distance", comment: "")
+    let message_totalTime = NSLocalizedString("Time", comment: "")
+    let message_nowPace = NSLocalizedString("Now Pace", comment: "")
+    let message_nowStepspers = NSLocalizedString("Now Steps/s", comment: "")
+    //ここまで
+    
     /*MARK:★*/ var paceMinutes: Int = 0
     /*MARK:★*/ var paceSeconds: Int = 0
     /*MARK:★*/ var pace: Int = 0
@@ -139,10 +156,10 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             let isWalkingOrRunning = activity.walking || activity.running
             DispatchQueue.main.async {
                 if isWalkingOrRunning {
-                    self.runningStatusLabel.text = "いい走りです！"
+                    self.runningStatusLabel.text = "\(self.goodRun)"
                     
                 } else {
-                    self.runningStatusLabel.text = "走り出そう！"
+                    self.runningStatusLabel.text = "\(self.letsRun)"
                     
                 }
             }
@@ -182,7 +199,7 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 
                 
                 
-                self.cadenceLabel.text = "\(self.cadence) 歩/秒"  //配列保存
+                self.cadenceLabel.text = "\(self.cadence) \(self.unit_cadence)"  //配列保存
                 
                 //MARK:ペース表示
                 if self.paceMinutes < 10 {
@@ -227,14 +244,14 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     
     // ↓ alert + 前の画面へ戻る
     @IBAction func hidesBackItem() {
-        let alert: UIAlertController = UIAlertController(title: "ランニング計測 トップ画面\nに戻りますか？",message: "現在計測中の記録を保存していない場合、この記録は削除されます。", preferredStyle: UIAlertController.Style.alert)
-        let confilmAction: UIAlertAction = UIAlertAction(title: "トップ画面へ", style: UIAlertAction.Style.default, handler:{
+        let alert: UIAlertController = UIAlertController(title: "\(backTop_alertTitle)",message: "\(backTop_alertmessage)", preferredStyle: UIAlertController.Style.alert)
+        let confilmAction: UIAlertAction = UIAlertAction(title: "\(backTop_alertbuckButtonTitle)", style: UIAlertAction.Style.default, handler:{
             (action: UIAlertAction!) -> Void in
             //↓前の画面へ戻る
             self.navigationController?.popViewController(animated: true)
         })
         
-        let cancelAction: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:nil)
+        let cancelAction: UIAlertAction = UIAlertAction(title: "\(backTop_alertcancelButtonTitle)", style: UIAlertAction.Style.cancel, handler:nil)
         
         alert.addAction(confilmAction)
         alert.addAction(cancelAction)
@@ -265,33 +282,33 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             if minutes != 0 {
                 if seconds < 10 {
                     if seconds != 0 {
-                        durationLabel.text = "0\(minutes)分0\(seconds)秒"//09:01
+                        durationLabel.text = "0\(minutes):0\(seconds)"//09:01
                     } else {
-                        durationLabel.text = "0\(minutes)分00秒"//09:00
+                        durationLabel.text = "0\(minutes):00"//09:00
                     }
                 } else {
-                    durationLabel.text = "0\(minutes)分\(seconds)秒"//09:12
+                    durationLabel.text = "0\(minutes):\(seconds)"//09:12
                 }
             } else {
                 if seconds < 10 {
                     if seconds != 0 {
-                        durationLabel.text = "00分0\(seconds)秒"//00:01
+                        durationLabel.text = "00:0\(seconds)"//00:01
                     } else {
-                        durationLabel.text = "00分00秒"//00:00
+                        durationLabel.text = "00:00"//00:00
                     }
                 } else {
-                    durationLabel.text = "00分\(seconds)秒"//00:12
+                    durationLabel.text = "00:\(seconds)"//00:12
                 }
             }
         } else {
             if seconds < 10 {
                 if seconds != 0 {
-                    durationLabel.text = "\(minutes)分0\(seconds)秒"//10:01
+                    durationLabel.text = "\(minutes):0\(seconds)"//10:01
                 } else {
-                    durationLabel.text = "\(minutes)分00秒"//10:00
+                    durationLabel.text = "\(minutes):00"//10:00
                 }
             } else {
-                durationLabel.text = "\(minutes)分\(seconds)秒"//10:12
+                durationLabel.text = "\(minutes):\(seconds)"//10:12
             }
         }
         //MARK:時間表示
@@ -299,25 +316,25 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         //start_通知機能_距離等_アプリを開いている時(NotBackground)
         if notificationSituation == kiromater {  // if kmと数が等しい時
             let content = UNMutableNotificationContent()
-            content.title = "\(kiromater)km 通過しました！"
+            content.title = "\(kiromater)km \(message_passed)"
             
             if paceMinutes < 10 {
                     if paceSeconds < 10 {
                         if minutes < 10 {
                                 if seconds < 10 {
-                                    content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分0\(seconds)秒\n現在のペース: 0\(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                    content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):0\(seconds)\n\(message_nowPace): 0\(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 00:00 01:01 00:01 01:00
                                 } else {
-                                    content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分\(seconds)秒\n現在のペース: 0\(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                    content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):\(seconds)\n\(message_nowPace): 0\(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 01:11 00:11
                                 }
                         } else {
                             if seconds < 10 {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分0\(seconds)秒\n現在のペース: 0\(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):0\(seconds)\n\(message_nowPace): 0\(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 11:01 11:00
 
                             } else {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分\(seconds)秒\n現在のペース: 0\(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):\(seconds)\n\(message_nowPace): 0\(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 11:11
                             }
                         }
@@ -325,19 +342,19 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                     } else {
                         if minutes < 10 {
                                 if seconds < 10 {
-                                    content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分0\(seconds)秒\n現在のペース: 0\(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                    content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):0\(seconds)\n\(message_nowPace): 0\(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 00:00 01:01 00:01 01:00
                                 } else {
-                                    content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分\(seconds)秒\n現在のペース: 0\(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                    content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):\(seconds)\n\(message_nowPace): 0\(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 01:11 00:11
                                 }
                         } else {
                             if seconds < 10 {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分0\(seconds)秒\n現在のペース: 0\(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):0\(seconds)\n\(message_nowPace): 0\(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                     //時間 11:01 11:00
 
                             } else {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分\(seconds)秒\n現在のペース: 0\(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):\(seconds)\n\(message_nowPace): 0\(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 11:11
                             }
                         }
@@ -347,19 +364,19 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 if paceSeconds < 10 {
                     if minutes < 10 {
                             if seconds < 10 {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分0\(seconds)秒\n現在のペース: \(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):0\(seconds)\n\(message_nowPace): \(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 00:00 01:01 00:01 01:00
                             } else {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分\(seconds)秒\n現在のペース: \(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):\(seconds)\n\(message_nowPace): \(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 01:11 00:11
                             }
                     } else {
                         if seconds < 10 {
-                            content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分0\(seconds)秒\n現在のペース: \(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                            content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):0\(seconds)\n\(message_nowPace): \(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 11:01 11:00
 
                         } else {
-                            content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分\(seconds)秒\n現在のペース: \(paceMinutes):0\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                            content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):\(seconds)\n\(message_nowPace): \(paceMinutes):0\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                             //時間 11:11
                         }
                     }
@@ -368,19 +385,19 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
                 } else {
                     if minutes < 10 {
                             if seconds < 10 {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分0\(seconds)秒\n現在のペース: \(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):0\(seconds)\n\(message_nowPace): \(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 00:00 01:01 00:01 01:00
                             } else {
-                                content.body = "合計距離: \(kiromater)km\n合計時間: 0\(minutes)分\(seconds)秒\n現在のペース: \(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                                content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): 0\(minutes):\(seconds)\n\(message_nowPace): \(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 01:11 00:11
                             }
                     } else {
                         if seconds < 10 {
-                            content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分0\(seconds)秒\n現在のペース: \(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                            content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):0\(seconds)\n\(message_nowPace): \(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                                 //時間 11:01 11:00
 
                         } else {
-                            content.body = "合計距離: \(kiromater)km\n合計時間: \(minutes)分\(seconds)秒\n現在のペース: \(paceMinutes):\(paceSeconds)/km\n現在の毎秒歩数: \(cadence)歩/秒"
+                            content.body = "\(message_totalDistance): \(kiromater)km\n\(message_totalTime): \(minutes):\(seconds)\n\(message_nowPace): \(paceMinutes):\(paceSeconds)/km\n\(message_nowStepspers): \(cadence)\(unit_cadence)"
                             //時間 11:11
                         }
                     }

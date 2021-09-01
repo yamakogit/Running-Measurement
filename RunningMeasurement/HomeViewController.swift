@@ -15,9 +15,21 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     //Start_webview_お知らせバナー
     @IBOutlet weak var webView: WKWebView!
     
+    
+    //ここから
+    let verinfo_url = NSLocalizedString("English_urlを入力", comment: "")
+    let gocommentary_url = NSLocalizedString("English_urlを入力", comment: "")
+    let goform_url = NSLocalizedString("English_urlを入力", comment: "")
+    let goNewFunction_url = NSLocalizedString("English_urlを入力", comment: "")
+    let goAppStore_url = NSLocalizedString("English_urlを入力", comment: "")
+    //ここまで
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
         if let url = URL(string: "https://sites.google.com/view/k-running-info/%E3%83%9B%E3%83%BC%E3%83%A0") {
             self.webView.load(URLRequest(url: url))
         }

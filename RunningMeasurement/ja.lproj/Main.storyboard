@@ -472,7 +472,7 @@
                         <outlet property="paceLabel" destination="6Y0-un-ZYD" id="VEB-zJ-qyL"/>
                         <outlet property="runningDistanceLabel" destination="LhL-sr-C6e" id="2N5-qq-LYE"/>
                         <outlet property="runningStatusLabel" destination="obs-Uo-oth" id="kHk-KY-Ctg"/>
-                        <outlet property="stopButton" destination="Ebm-Za-NXs" id="4Ck-3p-UFU"/>
+                        <outlet property="stopButton" destination="Ebm-Za-NXs" id="ODB-Yx-yVa"/>
                         <segue destination="q0c-lt-pzI" kind="show" identifier="toResult" id="zG8-Xf-AzZ"/>
                     </connections>
                 </viewController>

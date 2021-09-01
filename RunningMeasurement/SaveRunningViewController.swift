@@ -49,6 +49,10 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
     var paceSeconds: Int = 0
     var pacea: Int = 0
     
+    let unit_cadence = NSLocalizedString("steps/s", comment: "")
+    let save_alertTitle = NSLocalizedString("Save Running", comment: "")
+    let save_alertmessage = NSLocalizedString("Save running record.\nCheck result ”History” tab.", comment: "")
+    
     let savePlayer = try! AVAudioPlayer(data: NSDataAsset(name: "save")!.data)
     @IBAction func tapSaveButton(){
         savePlayer.currentTime = 0
@@ -131,36 +135,36 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
             if minutes != 0 {
                 if seconds < 10 {
                     if seconds != 0 {
-                        durationLabel.text = "0\(minutes)分0\(seconds)秒"//09:01
+                        durationLabel.text = "0\(minutes):0\(seconds)"//09:01
                     } else {
-                        durationLabel.text = "0\(minutes)分00秒"//09:00
+                        durationLabel.text = "0\(minutes):00"//09:00
                     }
                 } else {
-                    durationLabel.text = "0\(minutes)分\(seconds)秒"//09:12
+                    durationLabel.text = "0\(minutes):\(seconds)"//09:12
                 }
             } else {
                 if seconds < 10 {
                     if seconds != 0 {
-                        durationLabel.text = "00分0\(seconds)秒"//00:01
+                        durationLabel.text = "00:0\(seconds)"//00:01
                     } else {
-                        durationLabel.text = "00分00秒"//00:00
+                        durationLabel.text = "00:00"//00:00
                     }
                 } else {
-                    durationLabel.text = "00分\(seconds)秒"//00:12
+                    durationLabel.text = "00:\(seconds)"//00:12
                 }
             }
         } else {
             if seconds < 10 {
                 if seconds != 0 {
-                    durationLabel.text = "\(minutes)分0\(seconds)秒"//10:01
+                    durationLabel.text = "\(minutes):0\(seconds)"//10:01
                 } else {
-                    durationLabel.text = "\(minutes)分00秒"//10:00
+                    durationLabel.text = "\(minutes):00"//10:00
                 }
             } else {
-                durationLabel.text = "\(minutes)分\(seconds)秒"//10:12
+                durationLabel.text = "\(minutes):\(seconds)"//10:12
             }
         }
-        cadenceLabel.text = "\(cadence) 歩/秒"
+        cadenceLabel.text = "\(cadence) \(unit_cadence)"
         
     }
     
@@ -210,8 +214,8 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         */
         //start_通知
         let content = UNMutableNotificationContent()
-        content.title = "記録を保存しました"
-        content.body = "ランニング記録を保存しました。\n計測履歴画面で結果を確認してください。"
+        content.title = "\(save_alertTitle)"
+        content.body = "\(save_alertmessage)"
         content.sound = UNNotificationSound.default
         // content.categoryIdentifier = "category_select"
         let request = UNNotificationRequest(identifier: "dataSave", content: content, trigger: nil)

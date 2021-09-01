@@ -16,14 +16,32 @@ import UserNotifications //通知機能_許可
 
 class StartRunningViewController: UIViewController, CLLocationManagerDelegate, SFSafariViewControllerDelegate {
 
+    
     @IBOutlet weak var pedometerButton: UIButton!  //スタートボタンと関連付けを行うため
     @IBOutlet var mapView: MKMapView!  //mapと関連付けを行うため
     @IBOutlet weak var webView: WKWebView!
+    
     
     var locatioManager: CLLocationManager!  //位置情報を格納するための変数を宣言
     var alertController: UIAlertController! //alertの変数
     
     let startPlayer = try! AVAudioPlayer(data: NSDataAsset(name: "start")!.data)
+    
+    
+    //ここから
+    let goRunningCommentary_url = NSLocalizedString("English_urlを入力", comment: "")
+    let goAppstore_url = NSLocalizedString("English_urlを入力", comment: "")
+    let verinfo_url = NSLocalizedString("English_urlを入力", comment: "")
+    
+    let location_alertTitle_please = NSLocalizedString("Please Allow to use Location Infomation", comment: "")
+    let location_alertTitle_suggest = NSLocalizedString("Suggest to change location infomation [While Using the App].", comment: "")
+    let location_alertTitle_unknown = NSLocalizedString("Do you allow to use location infomation?", comment: "")
+    
+    
+    let location_alertMessage_please = NSLocalizedString("If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow.", comment: "")
+    let location_alertMessage_suggest = NSLocalizedString("You can use this App aright even if [While Using the App].", comment: "")
+    let location_alertMessage_unknown = NSLocalizedString("If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow.", comment: "")
+    //ここまで
     
     @IBAction func tapStartButton(){
         startPlayer.currentTime = 0
@@ -96,21 +114,21 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
         switch status {
         case .notDetermined: break
         case .restricted:
-            alert(title: "位置情報の使用を\n許可してください",message: "位置情報の使用を許可しない場合、\nアプリがクラッシュします。\n正しく使用するには、\n位置情報の使用を許可してください。")
+            alert(title: "",message: "\(location_alertTitle_please)")
             //start_通知
             let content = UNMutableNotificationContent()
-            content.title = "位置情報の使用を許可してください"
-            content.body = "位置情報の使用を許可しない場合、\nアプリがクラッシュします。\n正しく使用するには、位置情報の使用を許可してください。"
+            content.title = "\(location_alertTitle_please)"
+            content.body = "\(location_alertMessage_please)"
             content.sound = UNNotificationSound.default
             let request = UNNotificationRequest(identifier: "locationRestrictedNotification", content: content, trigger: nil)
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
             //end_通知
         case .authorizedAlways:
-            alert(title: "位置情報の許可を[App使用中のみ]にすることをお勧めします",message: "[このApp使用中のみ]でも、\nこのアプリは正常に作動します")
+            alert(title: "\(location_alertTitle_suggest)",message: "\(location_alertMessage_suggest)")
             //start_通知
             let content = UNMutableNotificationContent()
-            content.title = "位置情報の許可を[App使用中のみ]にすることをお勧めします"
-            content.body = "[App使用中のみ]でも、このアプリは正常に作動します。"
+            content.title = "\(location_alertTitle_suggest)"
+            content.body = "\(location_alertMessage_suggest)"
             content.sound = UNNotificationSound.default
             let request = UNNotificationRequest(identifier: "locationAlwaysNotification", content: content, trigger: nil)
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
@@ -118,11 +136,11 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
         case .authorizedWhenInUse: break
             
         @unknown default:
-            alert(title: "位置情報の使用を\n許可していますか？",message: "位置情報の使用を許可していない場合、\nアプリがクラッシュします。\n正しく使用するには、\n位置情報の使用を許可してください。")
+            alert(title: "\(location_alertTitle_unknown)",message: "\(location_alertMessage_unknown)")
             //start_通知
             let content = UNMutableNotificationContent()
-            content.title = "位置情報の使用を許可していますか？"
-            content.body = "位置情報の使用を許可していない場合、\nアプリがクラッシュします。\n正しく使用するには、位置情報の使用を許可してください。"
+            content.title = "\(location_alertTitle_unknown)"
+            content.body = "\(location_alertMessage_unknown)"
             content.sound = UNNotificationSound.default
             let request = UNNotificationRequest(identifier: "locationDefaultNotification", content: content, trigger: nil)
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
