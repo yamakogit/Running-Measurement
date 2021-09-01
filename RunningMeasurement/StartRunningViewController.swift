@@ -114,7 +114,7 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
         switch status {
         case .notDetermined: break
         case .restricted:
-            alert(title: "",message: "\(location_alertTitle_please)")
+            alert(title: "\(location_alertTitle_please)",message: "\(location_alertMessage_please)")
             //start_通知
             let content = UNMutableNotificationContent()
             content.title = "\(location_alertTitle_please)"
