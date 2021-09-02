@@ -3,7 +3,7 @@
 //  RunningMeasurement
 //
 //  Created by Fumiya Tanaka on 2020/08/06.
-//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//  Copyright © 2020 Koki Yamada. All rights reserved.
 //
 
 import UIKit  //事前に追加されている
@@ -38,9 +38,9 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
     let location_alertTitle_unknown = NSLocalizedString("Do you allow to use location infomation?", comment: "")
     
     
-    let location_alertMessage_please = NSLocalizedString("If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow.", comment: "")
+    let location_alertMessage_please = NSLocalizedString("If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please allow.", comment: "")
     let location_alertMessage_suggest = NSLocalizedString("You can use this App aright even if [While Using the App].", comment: "")
-    let location_alertMessage_unknown = NSLocalizedString("If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow.", comment: "")
+    let location_alertMessage_unknown = NSLocalizedString("If DONOT allow to use Location Infomation, this App crashes. To use this App aright, please Allow.", comment: "")
     //ここまで
     
     @IBAction func tapStartButton(){

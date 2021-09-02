@@ -3,7 +3,7 @@
 //  RunningMeasurement
 //
 //  Created by 山田航輝 on 2020/10/06.
-//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//  Copyright © 2020 Koki Yamada. All rights reserved.
 //
 
 import UIKit

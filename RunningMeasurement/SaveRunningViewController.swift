@@ -3,7 +3,7 @@
 //  RunningMeasurement
 //
 //  Created by Fumiya Tanaka on 2020/08/09.
-//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//  Copyright © 2020 Koki Yamada. All rights reserved.
 //
 
 import UIKit
@@ -49,9 +49,11 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
     var paceSeconds: Int = 0
     var pacea: Int = 0
     
+    //ここから
     let unit_cadence = NSLocalizedString("steps/s", comment: "")
-    let save_alertTitle = NSLocalizedString("Save Running", comment: "")
+    let save_alertTitle = NSLocalizedString("Save Running Record", comment: "")
     let save_alertmessage = NSLocalizedString("Save running record.\nCheck result ”History” tab.", comment: "")
+    //ここまで
     
     let savePlayer = try! AVAudioPlayer(data: NSDataAsset(name: "save")!.data)
     @IBAction func tapSaveButton(){

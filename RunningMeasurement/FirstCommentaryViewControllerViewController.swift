@@ -3,7 +3,7 @@
 //  RunningMeasurement
 //
 //  Created by 山田航輝 on 2020/11/08.
-//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//  Copyright © 2020 Koki Yamada. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,9 @@ import WebKit
 class FirstCommentaryViewControllerViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
+    
+    
+    let firstCommentary_url = NSLocalizedString("English_urlを入力", comment: "")
     
     override func viewDidLoad() {
         super.viewDidLoad()

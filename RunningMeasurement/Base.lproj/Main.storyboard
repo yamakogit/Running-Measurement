@@ -623,18 +623,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uzL-zs-qc0">
-                                <rect key="frame" x="0.0" y="648.66666666666663" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="644.66666666666663" width="414" height="28"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-Dm-aoC">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asy-74-dek">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="28e-hC-PWd"/>
+                                            <constraint firstAttribute="width" constant="200" id="vsv-nJ-wM1"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="Avg. Steps/s">
                                                 <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
+                                                    <font key="NSFont" size="24" name="Klee-Medium"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -642,7 +641,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoX-JE-KU2">
-                                        <rect key="frame" x="208" y="0.0" width="206" height="24"/>
+                                        <rect key="frame" x="208" y="0.0" width="206" height="28"/>
                                         <attributedString key="attributedText">
                                             <fragment content="4歩/秒">
                                                 <attributes>
@@ -656,10 +655,10 @@
                                 </subviews>
                             </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tmt-en-ce5">
-                                <rect key="frame" x="0.0" y="44.000000000000028" width="414" height="455.66666666666674"/>
+                                <rect key="frame" x="0.0" y="44.000000000000028" width="414" height="451.66666666666674"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l38-su-UaC">
-                                <rect key="frame" x="0.0" y="507.66666666666674" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="503.66666666666674" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-Ti-f0R">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -691,7 +690,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="elj-WB-Qgs">
-                                <rect key="frame" x="0.0" y="580.33333333333337" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="576.33333333333337" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-gG-Hch">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -723,17 +722,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8e0-df-3E6">
-                                <rect key="frame" x="0.0" y="612.33333333333337" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="608.33333333333337" width="414" height="24"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-qm-prK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSX-RV-pih">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="H3Z-Ge-UKx"/>
+                                            <constraint firstAttribute="width" constant="200" id="nz5-b9-UZl"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="Pace Avg.">
                                                 <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -756,7 +754,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-yB-bk1">
-                                <rect key="frame" x="0.0" y="544" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="540" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcc-YN-ZDn">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>

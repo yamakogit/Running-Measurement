@@ -3,7 +3,7 @@
   RunningMeasurement
 
   Created by K_Xcode on 2021/09/01.
-  Copyright © 2021 Fumiya Tanaka. All rights reserved.
+  Copyright © 2021 Koki Yamada. All rights reserved.
 */
 
 //HomeViewController.swift
@@ -17,12 +17,11 @@
 
 "Do you allow to use location infomation?" = "位置情報の使用を許可していますか？";
 
-"If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow." = "位置情報の使用を許可しない場合、\nアプリがクラッシュします。\n正しく使用するには、位置情報の使用を許可してください。";
+"If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please allow." = "位置情報の使用を許可しない場合、\nアプリがクラッシュします。\n正しく使用するには、位置情報の使用を許可してください。";
 
 "You can use this App aright even if [While Using the App]." = "[このApp使用中のみ]でも、\nこのアプリは正常に作動します";
 
-"If DONOT Allow to use Location Infomation, this App crashes. To use this App aright, please Allow." = "位置情報の使用を許可していない場合、\nアプリがクラッシュします。\n正しく使用するには、\n位置情報の使用を許可してください。";
-
+"If DONOT allow to use Location Infomation, this App crashes. To use this App aright, please Allow." = "位置情報の使用を許可していない場合、\nアプリがクラッシュします。\n正しく使用するには、\n位置情報の使用を許可してください。";
 
 
 //RunningViewController.swift
@@ -39,8 +38,9 @@
 "Now Pace" = "現在のペース";  //message_nowPace
 "Now Steps/s" = "現在の毎秒歩数";  //message_nowStepspers
 
+
 //SaveRunningViewController.swift
-"Save Running" = "記録を保存しました";  //save_alertTitle
+"Save Running Record" = "記録を保存しました";  //save_alertTitle
 "Save running record.\nCheck result ”History” tab." = "ランニング記録を保存しました。\n計測履歴画面で結果を確認してください。";  //save_alertmessage
 
 //HistoryViewController.swift
@@ -56,3 +56,4 @@
 
 
 //FirstCommentaryViewControllerViewController.swift
+

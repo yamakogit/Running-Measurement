@@ -533,7 +533,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-i6-b6J">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍地点を検索" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="　" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
                                 <rect key="frame" x="2" y="47" width="410" height="35"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -666,15 +666,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uzL-zs-qc0">
                                 <rect key="frame" x="0.0" y="648.66666666666663" width="414" height="24"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVm-Dm-aoC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAa-Cb-o0L">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="28e-hC-PWd"/>
+                                            <constraint firstAttribute="width" constant="200" id="kbb-bj-LVf"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="平均毎秒歩数">
+                                            <fragment content="ペース平均">
                                                 <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -697,10 +696,10 @@
                                 </subviews>
                             </stackView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Tmt-en-ce5">
-                                <rect key="frame" x="0.0" y="44.000000000000028" width="414" height="455.66666666666674"/>
+                                <rect key="frame" x="0.0" y="43.999999999999972" width="414" height="451.33333333333326"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="l38-su-UaC">
-                                <rect key="frame" x="0.0" y="507.66666666666674" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="503.33333333333326" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpy-Ti-f0R">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -732,7 +731,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="elj-WB-Qgs">
-                                <rect key="frame" x="0.0" y="580.33333333333337" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="576" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy4-gG-Hch">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -766,15 +765,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8e0-df-3E6">
                                 <rect key="frame" x="0.0" y="612.33333333333337" width="414" height="24"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSA-qm-prK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZa-LR-3cd">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="H3Z-Ge-UKx"/>
+                                            <constraint firstAttribute="width" constant="200" id="4Kv-Ls-aJc"/>
                                         </constraints>
                                         <attributedString key="attributedText">
                                             <fragment content="ペース平均">
                                                 <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
@@ -797,7 +795,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jt7-yB-bk1">
-                                <rect key="frame" x="0.0" y="544" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="539.66666666666663" width="414" height="24"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcc-YN-ZDn">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -845,7 +843,7 @@
                             <constraint firstItem="ayJ-5l-Mrr" firstAttribute="trailing" secondItem="Jt7-yB-bk1" secondAttribute="trailing" id="gil-ZI-wx4"/>
                             <constraint firstItem="ayJ-5l-Mrr" firstAttribute="trailing" secondItem="l38-su-UaC" secondAttribute="trailing" id="hbL-ly-SDZ"/>
                             <constraint firstItem="l38-su-UaC" firstAttribute="leading" secondItem="ayJ-5l-Mrr" secondAttribute="leading" id="jk6-Hd-fhF"/>
-                            <constraint firstItem="8e0-df-3E6" firstAttribute="top" secondItem="elj-WB-Qgs" secondAttribute="bottom" constant="8" id="o7J-ha-iee"/>
+                            <constraint firstItem="8e0-df-3E6" firstAttribute="top" secondItem="elj-WB-Qgs" secondAttribute="bottom" constant="12.33" id="o7J-ha-iee"/>
                             <constraint firstItem="l38-su-UaC" firstAttribute="top" secondItem="Tmt-en-ce5" secondAttribute="bottom" constant="8" id="pHE-yH-V2f"/>
                             <constraint firstItem="Jt7-yB-bk1" firstAttribute="top" secondItem="l38-su-UaC" secondAttribute="bottom" constant="12.33" id="qJX-mO-fW4"/>
                             <constraint firstItem="uzL-zs-qc0" firstAttribute="top" secondItem="8e0-df-3E6" secondAttribute="bottom" constant="12.33" id="qyA-za-zlG"/>

@@ -3,7 +3,7 @@
 //  RunningMeasurement
 //
 //  Created by 山田航輝 on 2020/08/10.
-//  Copyright © 2020 Fumiya Tanaka. All rights reserved.
+//  Copyright © 2020 Koki Yamada. All rights reserved.
 //
 
 import UIKit
@@ -29,6 +29,7 @@ class HistorydetailsViewController: UIViewController, MKMapViewDelegate {
     var selectedRunningData: [String: Any] = [:]  //配列保存
 //〜追加 8/20 詳細表示
    
+    var unit_cadence = NSLocalizedString("steps/s", comment: "")
     
     override func viewDidLoad() {  //元々追加されている
         super.viewDidLoad()  //元々追加されている
@@ -55,7 +56,7 @@ class HistorydetailsViewController: UIViewController, MKMapViewDelegate {
         //ステップ数を取得
         let cadence = selectedRunningData["cadence"] as! Int  //配列保存
         //ステップ数をラベルに表示
-        cadenceLabel.text = "\(cadence)歩/秒"  //配列保存
+        cadenceLabel.text = "\(cadence)\(unit_cadence)"  //配列保存
         
         
         let duration = selectedRunningData["duration"] as! Int  //経過時間を取得
