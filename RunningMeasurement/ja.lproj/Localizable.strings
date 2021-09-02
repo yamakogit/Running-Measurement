@@ -37,6 +37,8 @@
 "Time" = "合計時間";  //message_totalTime
 "Now Pace" = "現在のペース";  //message_nowPace
 "Now Steps/s" = "現在の毎秒歩数";  //message_nowStepspers
+"Stop" = "一時停止";
+"Resume" = "再開";
 
 
 //SaveRunningViewController.swift

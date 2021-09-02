@@ -98,6 +98,11 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     let message_totalTime = NSLocalizedString("Time", comment: "")
     let message_nowPace = NSLocalizedString("Now Pace", comment: "")
     let message_nowStepspers = NSLocalizedString("Now Steps/s", comment: "")
+    
+    //MARK:★★★ここでそれぞれLabel用のText代入
+    let labeltext_stop = NSLocalizedString("Stop", comment: "")
+    let labeltext_resume = NSLocalizedString("Resume", comment: "")
+    
     //ここまで
     
     /*MARK:★*/ var paceMinutes: Int = 0
@@ -435,10 +440,13 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         finishButton.isHidden = !isStopping
         
         if isStopping {
-            stopButton.setTitle("変わりました", for: .normal)
-            stopButton.setTitle("成功", for: .normal)
+            //MARK:★★★ここで動いていない(=停止)時のLabelTextを設定
+            stopButton.setTitle("\(labeltext_stop)", for: .normal)
         } else {
-            stopButton.setTitle("もどりました", for: .normal)
+            //MARK:★★★ここで動いている時のLabelTextを設定
+            stopButton.setTitle("\(labeltext_resume)", for: .normal)
+
+            //MARK:★★★上記のコードが一切効かず、StoryBoardで設定したTextが優先されている
         }
     }
     

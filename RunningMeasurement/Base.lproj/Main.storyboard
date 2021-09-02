@@ -354,7 +354,7 @@
                                         <inset key="contentEdgeInsets" minX="24" minY="16" maxX="24" maxY="16"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
-                                                <fragment content="Stop">
+                                                <fragment content="StopSB">
                                                     <attributes>
                                                         <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
