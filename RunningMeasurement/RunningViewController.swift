@@ -21,7 +21,8 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet var cadenceLabel: UILabel!  //配列保存
     @IBOutlet var mapView: MKMapView!
     @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var stopButton: UIButton!
+//    @IBOutlet var stopButton: UIButton!
+    @IBOutlet var stopresumeButton: UIButton!
     @IBOutlet var finishButton: UIButton!
     /*MARK:★*/@IBOutlet var paceLabel: UILabel!
     
@@ -439,12 +440,23 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
         
         finishButton.isHidden = !isStopping
         
+//        var stopButtonTitleRoald = stopresumeButton.currentTitle
+//
+//        if stopButtonTitleRoald == labeltext_stop {
+//            stopresumeButton.setTitle("\(labeltext_resume)", for: .normal)
+//        } else {
+//            stopresumeButton.setTitle("\(labeltext_stop)", for: .normal)
+//        }
+        
+        
         if isStopping {
-            //MARK:★★★ここで動いていない(=停止)時のLabelTextを設定
-            stopButton.setTitle("\(labeltext_stop)", for: .normal)
+            //MARK:★★★停止時のLabelTextを設定（再開）
+//            stopButton.setTitle("\(labeltext_stop)", for: .normal)
+            stopresumeButton.setTitle("\(labeltext_resume)", for: .normal)
         } else {
-            //MARK:★★★ここで動いている時のLabelTextを設定
-            stopButton.setTitle("\(labeltext_resume)", for: .normal)
+            //MARK:★★★計測時のLabelTextを設定（一時停止）
+//            stopButton.setTitle("\(labeltext_resume)", for: .normal)
+            stopresumeButton.setTitle("\(labeltext_stop)", for: .normal)
 
             //MARK:★★★上記のコードが一切効かず、StoryBoardで設定したTextが優先されている
         }
