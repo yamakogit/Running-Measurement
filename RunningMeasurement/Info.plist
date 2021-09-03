@@ -43,22 +43,21 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>ランニング計測中にアプリ内で
-写真を撮影するために使用します</string>
+	<string>We use this to take a photo
+in K running during running.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>ランニング計測での現在地と
-GPS軌跡の表示
-(バックグラウンドでも使用します)
-地図画面での現在地表示のため使用します
-（位置情報取得を許可しない場合、
-このアプリは正しく作動しません）</string>
+	<string>We use this to show current place
+and GPS trajectory to record running
+and to show on map
+(We use this in the background too).
+If you did NOT allow to use this
+to K running, you CANNOT use
+K running aright.</string>
 	<key>NSMotionUsageDescription</key>
-	<string>ランニング計測の際、
-歩数を計測するために使用します</string>
+	<string>We use this to measure steps during running.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>ランニング計測中に
-アプリ内で撮影した
-写真を保存するために使用します</string>
+	<string>We use this to save photos which
+shoot in K running during running.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

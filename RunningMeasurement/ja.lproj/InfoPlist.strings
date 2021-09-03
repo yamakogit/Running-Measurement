@@ -7,3 +7,11 @@
 */
 
 CFBundleDisplayName = "K ランニング";
+NSCameraUsageDescription = "ランニング計測中にアプリ内で\n写真を撮影するために使用します";
+//We use this to take a photo in K running during running.
+NSLocationWhenInUseUsageDescription = "ランニング計測での現在地と\nGPS軌跡の表示\n(バックグラウンドでも使用します)\n地図画面での現在地表示のため使用します\n（位置情報取得を許可しない場合、\nこのアプリは正しく作動しません）";
+//We use this to show current place and GPS trajectory to record running and to show on map (We use this in the background too). If you did NOT allow to use this to K running, you CANNOT use K running aright.
+NSMotionUsageDescription = "ランニング計測の際、\n歩数を計測するために使用します";
+//We use this to measure steps during running.
+NSPhotoLibraryAdditionsUsageDescription = "ランニング計測中に\nアプリ内で撮影した\n写真を保存するために使用します";
+//We  use this to save photos which shoot in K running during running.
