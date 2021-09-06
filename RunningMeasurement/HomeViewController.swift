@@ -17,11 +17,10 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     
     
     //ここから
-    let verinfo_url = NSLocalizedString("English_urlを入力", comment: "")
-    let gocommentary_url = NSLocalizedString("English_urlを入力", comment: "")
-    let goform_url = NSLocalizedString("English_urlを入力", comment: "")
-    let goNewFunction_url = NSLocalizedString("English_urlを入力", comment: "")
-    let goAppStore_url = NSLocalizedString("English_urlを入力", comment: "")
+    let verinfo_url = NSLocalizedString("https://sites.google.com/view/k-running-info-eng/%E3%83%9B%E3%83%BC%E3%83%A0", comment: "")
+    let gocommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/instruction", comment: "")
+    let goform_url = NSLocalizedString("https://docs.google.com/forms/d/e/1FAIpQLSddxTl1-mQxsWgna6zRUp0vokm5yq9ppEBmbkBW-mRdDX3NDw/viewform", comment: "")
+    let goNewFunction_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/update-new-functions", comment: "")
     //ここまで
     
     
@@ -30,14 +29,14 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
         // Do any additional setup after loading the view.
         
         
-        if let url = URL(string: "https://sites.google.com/view/k-running-info/%E3%83%9B%E3%83%BC%E3%83%A0") {
+        if let url = URL(string: "\(verinfo_url)") {
             self.webView.load(URLRequest(url: url))
         }
     }
     //End_webview_お知らせバナー
     //Start_button_取扱説明書へ
     @IBAction func gocommentary(_ sender: Any) {
-        let url = NSURL(string: "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8")
+        let url = NSURL(string: "\(gocommentary_url)")
         if let url = url {
             let safariViewController = SFSafariViewController(url: url as URL)
             safariViewController.delegate = self
@@ -47,7 +46,7 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     //End_button_取扱説明書へ
     //Start_button_入力フォームへ
     @IBAction func goform(_ sender: Any) {
-        let url = NSURL(string: "https://docs.google.com/forms/d/e/1FAIpQLSfifrK6fRMIoiCcKKjObHv2MHfuSXGcvMlVX9p-YRWKDifibA/viewform")
+        let url = NSURL(string: "\(goform_url)")
         if let url = url {
             let safariViewController = SFSafariViewController(url: url as URL)
             safariViewController.delegate = self
@@ -57,7 +56,7 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     //End_button_入力フォームへ
     //Start_button_新機能を見る
     @IBAction func goNewFunction(_ sender: Any) {
-        let url = NSURL(string: "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%96%B0%E6%A9%9F%E8%83%BD")
+        let url = NSURL(string: "\(goNewFunction_url)")
         if let url = url {
             let safariViewController = SFSafariViewController(url: url as URL)
             safariViewController.delegate = self

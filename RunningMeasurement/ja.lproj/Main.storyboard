@@ -663,7 +663,7 @@
                                             <constraint firstAttribute="width" constant="200" id="kbb-bj-LVf"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="ペース平均">
+                                            <fragment content="毎秒歩数">
                                                 <attributes>
                                                     <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -1515,7 +1515,7 @@
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="location" catalog="system" width="128" height="121"/>
-        <image name="questionmark.circle" catalog="system" width="32" height="32"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="ホーム 文字" width="750" height="150"/>
         <image name="ホーム 背景" width="750" height="150"/>
         <systemColor name="linkColor">

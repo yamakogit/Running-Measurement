@@ -6,11 +6,16 @@
   Copyright © 2021 Koki Yamada. All rights reserved.
 */
 
-//HomeViewController.swift
+//MARK: HomeViewController.swift
+"https://sites.google.com/view/k-running-info-eng/%E3%83%9B%E3%83%BC%E3%83%A0" = "https://sites.google.com/view/k-running-info/%E3%83%9B%E3%83%BC%E3%83%A0";  //verinfo_url
+
+"https://sites.google.com/view/k-running-eng/instruction" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8";   //gocommentary_url
+
+"https://docs.google.com/forms/d/e/1FAIpQLSddxTl1-mQxsWgna6zRUp0vokm5yq9ppEBmbkBW-mRdDX3NDw/viewform" = "https://docs.google.com/forms/d/e/1FAIpQLSfifrK6fRMIoiCcKKjObHv2MHfuSXGcvMlVX9p-YRWKDifibA/viewform";  //goform_url
+"https://sites.google.com/view/k-running-eng/home/update-new-functions" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%96%B0%E6%A9%9F%E8%83%BD";  //goNewFunction_url
 
 
-
-//StartRunningViewController.swift
+//MARK: StartRunningViewController.swift
 "Please Allow to use Location Infomation" = "位置情報の使用を\n許可してください";
 
 "Suggest to change location infomation [While Using the App]." = "位置情報の許可を[App使用中のみ]にすることをお勧めします";
@@ -24,7 +29,10 @@
 "If DONOT allow to use Location Infomation, this App crashes. To use this App aright, please Allow." = "位置情報の使用を許可していない場合、\nアプリがクラッシュします。\n正しく使用するには、\n位置情報の使用を許可してください。";
 
 
-//RunningViewController.swift
+"https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.daylgdit512j" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=0#h.daylgdit512j";  //gorunningcommentary
+
+
+//MARK: RunningViewController.swift
 "Good Run!" = "いい走りです！";  //goodRun
 "Let's Run!" = "走り出そう！";  //letsRun
 "steps/s" = "歩/秒";  //unit_cadence
@@ -41,21 +49,21 @@
 "Resume" = "再開";
 
 
-//SaveRunningViewController.swift
+//MARK: SaveRunningViewController.swift
 "Save Running Record" = "記録を保存しました";  //save_alertTitle
 "Save running record.\nCheck result ”History” tab." = "ランニング記録を保存しました。\n計測履歴画面で結果を確認してください。";  //save_alertmessage
 
-//HistoryViewController.swift
+//MARK: HistoryViewController.swift
+
+"https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.g6fllpk0m5a1" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=0#h.g6fllpk0m5a1";
+
+//MARK: HistorydetailsViewController.swift
 
 
 
-//HistorydetailsViewController.swift
+//MARK: MapViewController.swift
+"https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.tkm59zjowjis" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=0#h.tkm59zjowjis";
 
 
-
-//MapViewController.swift
-
-
-
-//FirstCommentaryViewControllerViewController.swift
+//MARK: FirstCommentaryViewControllerViewController.swift
 

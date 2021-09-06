@@ -13,8 +13,10 @@ import SafariServices
 
 class MapViewController: UIViewController, CLLocationManagerDelegate ,UITextFieldDelegate, SFSafariViewControllerDelegate {  //位置情報・検索バーを使用できるようにするため
     
+    let goMapCommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.tkm59zjowjis", comment: "")
+    
     @IBAction func goMapCommentary(_ sender: Any) {
-        let url = NSURL(string: "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=1#h.tkm59zjowjis")
+        let url = NSURL(string: "\(goMapCommentary_url)")
             
             if let url = url {
                 let safariViewController = SFSafariViewController(url: url as URL)

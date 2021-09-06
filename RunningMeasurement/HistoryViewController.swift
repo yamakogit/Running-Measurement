@@ -24,6 +24,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     var runningData: [[String: Any]] = []  //ランニングの各記録を格納するため  //配列保存
     var saveData: UserDefaults = UserDefaults.standard  //ランニングの各記録を格納するため  //配列保存
     
+    let goHistoryCommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.g6fllpk0m5a1", comment: "")
+    
     override func viewDidLoad() {  //元々追加されている
         super.viewDidLoad()  //元々追加されている
         tableView.delegate = self  //TableViewを使用できるようにするため  //配列保存
@@ -35,7 +37,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func goHistoryCommentary(_ sender: Any) {
-        let url = NSURL(string: "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=1#h.g6fllpk0m5a1")
+        let url = NSURL(string: "\(goHistoryCommentary_url)")
             
             if let url = url {
                 let safariViewController = SFSafariViewController(url: url as URL)

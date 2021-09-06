@@ -29,9 +29,8 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
     
     
     //ここから
-    let goRunningCommentary_url = NSLocalizedString("English_urlを入力", comment: "")
-    let goAppstore_url = NSLocalizedString("English_urlを入力", comment: "")
-    let verinfo_url = NSLocalizedString("English_urlを入力", comment: "")
+    let goRunningCommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.daylgdit512j", comment: "")
+    let verinfo_url = NSLocalizedString("https://sites.google.com/view/k-running-info-eng/%E3%83%9B%E3%83%BC%E3%83%A0", comment: "")
     
     let location_alertTitle_please = NSLocalizedString("Please Allow to use Location Infomation", comment: "")
     let location_alertTitle_suggest = NSLocalizedString("Suggest to change location infomation [While Using the App].", comment: "")
@@ -49,7 +48,7 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
     }
     
     @IBAction func goRunningCommentary(_ sender: Any) {
-    let url = NSURL(string: "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=1#h.daylgdit512j")
+    let url = NSURL(string: "\(goRunningCommentary_url)")
         
         if let url = url {
             let safariViewController = SFSafariViewController(url: url as URL)
@@ -81,7 +80,7 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
                mapView.showsUserLocation = true  //現在地を地図に表示する
         
         super.viewDidLoad()
-        if let url = URL(string: "https://sites.google.com/view/k-running-info/%E3%83%9B%E3%83%BC%E3%83%A0") {
+        if let url = URL(string: "\(verinfo_url)") {
             self.webView.load(URLRequest(url: url))
         }
         
