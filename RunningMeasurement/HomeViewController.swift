@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     
     //ここから
     let verinfo_url = NSLocalizedString("https://sites.google.com/view/k-running-info-eng/%E3%83%9B%E3%83%BC%E3%83%A0", comment: "")
-    let gocommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/instruction", comment: "")
+    let gocommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction", comment: "")
     let goform_url = NSLocalizedString("https://docs.google.com/forms/d/e/1FAIpQLSddxTl1-mQxsWgna6zRUp0vokm5yq9ppEBmbkBW-mRdDX3NDw/viewform", comment: "")
     let goNewFunction_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/update-new-functions", comment: "")
     //ここまで

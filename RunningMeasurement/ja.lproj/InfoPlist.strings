@@ -13,6 +13,6 @@ NSLocationWhenInUseUsageDescription = "ランニング計測での現在地と\n
 //We use this to show current place and GPS trajectory to record running and to show on map (We use this in the background too). If you did NOT allow to use this to K running, you CANNOT use K running aright.
 NSMotionUsageDescription = "ランニング計測の際、\n歩数を計測するために使用します";
 //We use this to measure steps during running.
-NSPhotoLibraryAdditionsUsageDescription = "ランニング計測中に\nアプリ内で撮影した\n写真を保存するために使用します";
+NSPhotoLibraryAddUsageDescription = "ランニング計測中に、アプリ内で撮影した\n写真を保存するために使用します";
 //We  use this to save photos which shoot in K running during running.
 //完了

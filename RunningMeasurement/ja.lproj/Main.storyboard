@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="T9L-Kt-bDR" customClass="FirstCommentaryViewControllerViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oo-L4-bZL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-0K-mt1">
@@ -998,7 +998,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="保存">
                                             <attributes>
-                                                <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
+                                                <font key="NSFont" size="24" name="TsukuBRdGothic-Bold"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -1048,7 +1048,9 @@
                                 <attributedString key="attributedText">
                                     <fragment content="毎秒歩数">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="TsukuBRdGothic-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1123,7 +1125,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="4 steps/s">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
+                                            <font key="NSFont" size="24" name="TsukuBRdGothic-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1202,6 +1204,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RTH-29-q7C"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vw4-A6-ebW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.1176470588" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -1220,6 +1223,7 @@
                 <navigationController id="qJf-MB-Zy0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="jPe-Lf-SS7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGG-q0-GSl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.11764705882352941" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -1517,7 +1521,7 @@
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="location" catalog="system" width="128" height="121"/>
-        <image name="questionmark.circle" catalog="system" width="32" height="32"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="ホーム 文字" width="750" height="150"/>
         <image name="ホーム 背景" width="750" height="150"/>
         <systemColor name="linkColor">
