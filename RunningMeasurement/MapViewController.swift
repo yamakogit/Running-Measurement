@@ -13,6 +13,11 @@ import SafariServices
 
 class MapViewController: UIViewController, CLLocationManagerDelegate ,UITextFieldDelegate, SFSafariViewControllerDelegate {  //位置情報・検索バーを使用できるようにするため
     
+    @IBOutlet var switchMapButtonDesign: UIButton!
+    @IBOutlet var gocurrentPlaceButtonDesign: UIButton!
+    @IBOutlet var plusButtonDesign: UIButton!
+    @IBOutlet var minusButtonDesign: UIButton!
+    
     let goMapCommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.tkm59zjowjis", comment: "")
     
     @IBAction func goMapCommentary(_ sender: Any) {
@@ -91,6 +96,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate ,UITextFiel
         locatioManager.requestWhenInUseAuthorization()  // 位置情報取得の許可を得る
         
         mapView.showsUserLocation = true  //現在地を地図に表示する
+        
+        
+        //button等 design 設定
+        switchMapButtonDesign.layer.cornerRadius = 8
+        gocurrentPlaceButtonDesign.layer.cornerRadius = 8
+        plusButtonDesign.layer.cornerRadius = 8
+        minusButtonDesign.layer.cornerRadius = 8
+        
         
     }
     

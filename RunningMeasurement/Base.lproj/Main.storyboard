@@ -597,8 +597,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="gocurrentPlaceButtonDesign" destination="c9b-Lc-fL0" id="Wn7-JS-mcn"/>
                         <outlet property="inputText" destination="SgJ-ZI-UW7" id="d4V-Gv-Abh"/>
                         <outlet property="mapView" destination="aHg-i6-b6J" id="jSN-3Z-4xe"/>
+                        <outlet property="minusButtonDesign" destination="Qd2-as-L6H" id="8EN-ht-Agc"/>
+                        <outlet property="plusButtonDesign" destination="jPX-AF-aKT" id="uDq-gK-UPY"/>
+                        <outlet property="switchMapButtonDesign" destination="9FQ-Qp-isf" id="XQC-ga-IHT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLU-u2-2gu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1307,7 +1311,7 @@ Suggest New Function</string>
                                     <constraint firstAttribute="height" constant="36" id="dYj-Zu-jc2"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Ver. 3.0.2">
+                                    <fragment content="Ver. 3.1.0">
                                         <attributes>
                                             <color key="NSColor" red="0.94714504479999995" green="0.79633563760000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="22" name="HiraMaruProN-W4"/>

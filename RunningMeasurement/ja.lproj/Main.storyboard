@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="T9L-Kt-bDR" customClass="FirstCommentaryViewControllerViewController" customModule="RunningMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oo-L4-bZL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-0K-mt1">
@@ -524,7 +524,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aHg-i6-b6J">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="　" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="🔍地点を検索" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="SgJ-ZI-UW7">
                                 <rect key="frame" x="2" y="47" width="410" height="35"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -638,8 +638,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="gocurrentPlaceButtonDesign" destination="c9b-Lc-fL0" id="FF6-5n-Tjr"/>
                         <outlet property="inputText" destination="SgJ-ZI-UW7" id="d4V-Gv-Abh"/>
                         <outlet property="mapView" destination="aHg-i6-b6J" id="jSN-3Z-4xe"/>
+                        <outlet property="minusButtonDesign" destination="Qd2-as-L6H" id="0YX-9U-as7"/>
+                        <outlet property="plusButtonDesign" destination="jPX-AF-aKT" id="8X1-du-QbK"/>
+                        <outlet property="switchMapButtonDesign" destination="9FQ-Qp-isf" id="Onw-Ah-kEz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLU-u2-2gu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -977,7 +981,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="お疲れ様でした！">
                                         <attributes>
-                                            <font key="NSFont" size="32" name="HiraMaruProN-W4"/>
+                                            <font key="NSFont" size="32" name="Klee-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1198,7 +1202,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RTH-29-q7C"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vw4-A6-ebW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.1176470588" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -1217,7 +1220,6 @@
                 <navigationController id="qJf-MB-Zy0" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="ホーム" image="house.fill" catalog="system" id="jPe-Lf-SS7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGG-q0-GSl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.0" green="0.11764705882352941" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -1399,7 +1401,7 @@
                                     <constraint firstAttribute="height" constant="36" id="dYj-Zu-jc2"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Ver. 3.0.2">
+                                    <fragment content="Ver. 3.1.0">
                                         <attributes>
                                             <color key="NSColor" red="0.94714504479999995" green="0.79633563760000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="22" name="HiraMaruProN-W4"/>
@@ -1515,7 +1517,7 @@
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="location" catalog="system" width="128" height="121"/>
-        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <image name="questionmark.circle" catalog="system" width="32" height="32"/>
         <image name="ホーム 文字" width="750" height="150"/>
         <image name="ホーム 背景" width="750" height="150"/>
         <systemColor name="linkColor">
