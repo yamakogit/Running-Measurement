@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P04-XU-eDk">
-    <device id="retina5_5" orientation="portrait" appearance="dark"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P04-XU-eDk">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -305,6 +305,9 @@
                                 <action selector="goRunningCommentary:" destination="BYZ-38-t0r" id="J4E-zL-R56"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Running" id="RTX-Ml-apo">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="EXn-y7-Tva" id="fQL-1k-ehq"/>
@@ -455,6 +458,9 @@
                                 <action selector="hidesBackItem" destination="dTf-dU-UFi" id="Snu-Lc-X1v"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Running" id="T7b-Pl-hJ5">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="cadenceLabel" destination="E6x-C6-rta" id="Haz-0t-nQV"/>
@@ -595,6 +601,9 @@
                                 <action selector="goMapCommentary:" destination="4fz-h9-fc2" id="KAS-Ln-e1v"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="Map" id="j2N-0g-9jZ">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="gocurrentPlaceButtonDesign" destination="c9b-Lc-fL0" id="Wn7-JS-mcn"/>
@@ -609,7 +618,7 @@
             </objects>
             <point key="canvasLocation" x="1950.7246376811595" y="138.58695652173915"/>
         </scene>
-        <!--6月9日 ラン-->
+        <!--記録の詳細-->
         <scene sceneID="hj3-i9-Zul">
             <objects>
                 <viewController id="Lt6-k7-vRu" customClass="HistorydetailsViewController" customModule="RunningMeasurement" sceneMemberID="viewController">
@@ -805,7 +814,11 @@
                             <constraint firstItem="ayJ-5l-Mrr" firstAttribute="trailing" secondItem="8e0-df-3E6" secondAttribute="trailing" id="zGQ-OB-ZPc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="6月9日 ラン" id="yhb-NX-Zwe"/>
+                    <navigationItem key="navigationItem" title="記録の詳細" id="yhb-NX-Zwe">
+                        <barButtonItem key="rightBarButtonItem" image="History" id="YJT-f5-Rbt">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cadenceLabel" destination="YoX-JE-KU2" id="D44-n9-igr"/>
                         <outlet property="distanceLabel" destination="OEW-DF-S80" id="F5G-py-Vlb"/>
@@ -832,7 +845,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qiF-4h-zTA" detailTextLabel="jEp-w9-Vsd" style="IBUITableViewCellStyleSubtitle" id="AYW-tW-vup">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="55.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AYW-tW-vup" id="IYH-U7-hIb">
                                             <rect key="frame" x="0.0" y="0.0" width="384.33333333333331" height="55.666667938232422"/>
@@ -872,6 +885,9 @@
                             <connections>
                                 <action selector="goHistoryCommentary:" destination="RTE-Ei-RPz" id="e2n-MJ-ZRo"/>
                             </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="History" id="0i3-lg-Iky">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1088,7 +1104,11 @@
                             <constraint firstItem="q20-Ja-6DT" firstAttribute="centerY" secondItem="QdD-Nv-RiD" secondAttribute="centerY" id="zru-iN-hE8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Save" id="dzC-B7-Ovd"/>
+                    <navigationItem key="navigationItem" title="Save" id="dzC-B7-Ovd">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.arrow.down.fill" catalog="system" id="Ng6-XR-9Di">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="q20-Ja-6DT" id="R3N-GL-Cuc"/>
                         <outlet property="cadenceLabel" destination="XU8-Cu-f2p" id="a1s-nf-z7X"/>
@@ -1388,7 +1408,12 @@ Suggest New Function</string>
                             <constraint firstItem="dyb-Dd-IVI" firstAttribute="leading" secondItem="x8L-4u-a2V" secondAttribute="leading" constant="10" id="zej-xN-rs5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="Kn9-y5-Iwh"/>
+                    <navigationItem key="navigationItem" title="Home" id="Kn9-y5-Iwh">
+                        <barButtonItem key="leftBarButtonItem" image="questionmark.circle" catalog="system" id="swb-gm-5jE"/>
+                        <barButtonItem key="rightBarButtonItem" image="house.fill" catalog="system" id="daD-BF-NZS">
+                            <color key="tintColor" red="0.8928309083" green="0.31133773920000002" blue="0.2501992583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webView" destination="KeE-CL-9iB" id="HR0-ua-JYp"/>
                         <segue destination="T9L-Kt-bDR" kind="showDetail" identifier="Commentary" id="zGJ-Vu-VIc"/>
@@ -1420,14 +1445,15 @@ Suggest New Function</string>
         </scene>
     </scenes>
     <resources>
-        <image name="History" width="25" height="25"/>
-        <image name="Map" width="37.5" height="37.5"/>
-        <image name="Running" width="37.5" height="37.5"/>
+        <image name="History" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Map" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Running" width="33.333332061767578" height="33.666667938232422"/>
         <image name="Running 保存画面" width="750" height="423"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="location" catalog="system" width="128" height="118"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
         <image name="ホーム 文字" width="750" height="150"/>
         <image name="ホーム 背景" width="750" height="150"/>
         <systemColor name="linkColor">

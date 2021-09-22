@@ -50,7 +50,6 @@
 /* Begin PBXFileReference section */
 		537CA32226DC5ED30021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		537CA32726DC5F230021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		537DA06926DE563E000584C8 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53FEFE8126DF24C900D1B87F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D3466C1824DB197100EE7685 /* RunningMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3466C1B24DB197100EE7685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -384,7 +383,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3466C2224DB197100EE7685 /* Base */,
-				537DA06926DE563E000584C8 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
