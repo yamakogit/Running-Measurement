@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P04-XU-eDk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P04-XU-eDk">
     <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -241,18 +241,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="EXn-y7-Tva">
                                 <rect key="frame" x="0.0" y="44" width="414" height="643"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USO-9A-Cm1">
-                                <rect key="frame" x="10" y="621" width="394" height="56"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USO-9A-Cm1">
+                                <rect key="frame" x="10" y="614" width="394" height="63"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" name="TsukuARdGothic-Regular" family="Tsukushi A Round Gothic" pointSize="40"/>
                                 <inset key="contentEdgeInsets" minX="24" minY="8" maxX="24" maxY="8"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="スタート">
-                                            <attributes>
-                                                <font key="NSFont" size="40" name="HiraMaruProN-W4"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" title="スタート">
+                                    <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
                                     <action selector="tapStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzm-BY-FN8"/>
@@ -873,7 +868,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qiF-4h-zTA" detailTextLabel="jEp-w9-Vsd" style="IBUITableViewCellStyleSubtitle" id="AYW-tW-vup">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="55.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="55.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AYW-tW-vup" id="IYH-U7-hIb">
                                             <rect key="frame" x="0.0" y="0.0" width="384.33333333333331" height="55.666667938232422"/>
@@ -1048,7 +1043,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="毎秒歩数">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" systemColor="linkColor"/>
                                             <font key="NSFont" size="24" name="TsukuBRdGothic-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -1095,7 +1090,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="ペース平均">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="HiraMaruProN-W4"/>
+                                            <font key="NSFont" size="24" name="TsukuBRdGothic-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1514,13 +1509,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="History" width="25" height="25"/>
-        <image name="Map" width="37.5" height="37.5"/>
-        <image name="Running" width="37.5" height="37.5"/>
+        <image name="History" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Map" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="Running" width="33.333332061767578" height="33.666667938232422"/>
         <image name="Running 保存画面" width="750" height="423"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="location" catalog="system" width="128" height="121"/>
+        <image name="location" catalog="system" width="128" height="118"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="ホーム 文字" width="750" height="150"/>
         <image name="ホーム 背景" width="750" height="150"/>

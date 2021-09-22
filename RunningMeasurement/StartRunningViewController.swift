@@ -66,6 +66,7 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
     
     override func viewDidLoad() {  //事前に追加されている
         super.viewDidLoad()  //事前に追加されている
+        
         pedometerButton.layer.cornerRadius = 8  //角を角丸に設定
         pedometerButton.layer.shadowColor = UIColor.systemGray4.cgColor  //影の色を設定
         pedometerButton.layer.shadowOffset = .init(width: 2, height: 2)  //影の方向を設定
