@@ -19,6 +19,17 @@ enum ActionIdentifier: String {
  
 class SaveRunningViewController: UIViewController, UNUserNotificationCenterDelegate {
 
+    @IBOutlet weak var designBoth距離背景: UIImageView!
+    @IBOutlet weak var designBoth距離背景影: UIImageView!
+    @IBOutlet weak var designBoth時間背景: UIImageView!
+    @IBOutlet weak var designBoth時間背景影: UIImageView!
+    @IBOutlet weak var designBothペース平均背景: UIImageView!
+    @IBOutlet weak var designBothペース平均背景影: UIImageView!
+    @IBOutlet weak var designBoth毎秒歩数背景: UIImageView!
+    @IBOutlet weak var designBoth毎秒歩数背景影: UIImageView!
+    @IBOutlet weak var designBoth保存背景: UIImageView!
+    @IBOutlet weak var designBoth保存背景影: UIImageView!
+    
     @IBOutlet var distanceLabel: UILabel!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var cadenceLabel: UILabel!
@@ -26,7 +37,7 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
     
     @IBOutlet var saveButton: UIButton!
     
-    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+//    @IBOutlet var activityIndicator: UIActivityIndicatorView!
 
     var locationManager: CLLocationManager = CLLocationManager()
     var saveData: UserDefaults = UserDefaults.standard  //配列保存
@@ -66,7 +77,7 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         let minutes = duration / 60
         let seconds = duration % 60
         
-        activityIndicator.isHidden = true
+//        activityIndicator.isHidden = true
         
         //保存ボタン
         saveButton.layer.cornerRadius = 8  //角を角丸に設定
@@ -76,7 +87,7 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         saveButton.layer.shadowOpacity = 0.2  //影の色の透明度を設定
         //保存ボタン
         
-        activityIndicator.layer.cornerRadius = 5
+//        activityIndicator.layer.cornerRadius = 5
         
         
         
@@ -168,11 +179,26 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         }
         cadenceLabel.text = "\(cadence) \(unit_cadence)"
         
+        designBoth距離背景.layer.cornerRadius = 8
+        designBoth距離背景影.layer.cornerRadius = 8
+        
+        designBoth時間背景.layer.cornerRadius = 8
+        designBoth時間背景影.layer.cornerRadius = 8
+        
+        designBothペース平均背景.layer.cornerRadius = 8
+        designBothペース平均背景影.layer.cornerRadius = 8
+        
+        
+        designBoth毎秒歩数背景.layer.cornerRadius = 5
+        designBoth毎秒歩数背景影.layer.cornerRadius = 5
+        
+        designBoth保存背景.layer.cornerRadius = 8
+        designBoth保存背景影.layer.cornerRadius = 8
     }
     
     @IBAction func save() {
-        activityIndicator.isHidden = false
-        activityIndicator.startAnimating()
+//        activityIndicator.isHidden = false
+//        activityIndicator.startAnimating()
         //配列保存
         let dictionary: [String: Any] = [
             "cadence": cadence,
@@ -186,6 +212,9 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         ]
         var currentData = saveData.array(forKey: "running") ?? []
         currentData.append(dictionary)
+        print("ここから")
+        print(currentData)
+        print("ここまで")
         saveData.set(currentData, forKey: "running")
         dismiss(animated: true, completion: nil)
         //配列保存
@@ -195,7 +224,7 @@ class SaveRunningViewController: UIViewController, UNUserNotificationCenterDeleg
         tabBarItem?.badgeValue = "New"
         tabBarItem?.badgeColor = UIColor.systemRed
         
-        activityIndicator.stopAnimating()
+//        activityIndicator.stopAnimating()
         //ランニング計測 Top画面 へ
         self.navigationController?.popToRootViewController(animated: true)
         

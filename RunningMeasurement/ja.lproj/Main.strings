@@ -1,0 +1,177 @@
+
+/* Class = "UITabBarItem"; title = "History"; ObjectID = "0Vy-lX-mc9"; */
+"0Vy-lX-mc9.title" = "History";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "0zn-dJ-81W"; */
+"0zn-dJ-81W.normalTitle" = "戻る";
+
+/* Class = "UILabel"; text = " ▶︎保存時刻"; ObjectID = "18E-f3-MO6"; */
+"18E-f3-MO6.text" = " ▶︎保存時刻";
+
+/* Class = "UINavigationItem"; title = "History"; ObjectID = "3Ix-bp-BmQ"; */
+"3Ix-bp-BmQ.title" = "History";
+
+/* Class = "UILabel"; text = "ver. 3.1.0"; ObjectID = "4Ih-Sr-wxD"; */
+"4Ih-Sr-wxD.text" = "ver. 3.1.0";
+
+/* Class = "UILabel"; text = "お使いのバージョン"; ObjectID = "6nT-14-OhA"; */
+"6nT-14-OhA.text" = "お使いのバージョン";
+
+/* Class = "UINavigationItem"; title = "Running"; ObjectID = "7bp-hU-jh0"; */
+"7bp-hU-jh0.title" = "Running";
+
+/* Class = "UIButton"; normalTitle = "Switching"; ObjectID = "9FQ-Qp-isf"; */
+"9FQ-Qp-isf.normalTitle" = "Switching";
+
+/* Class = "UIButton"; normalTitle = "入力フォームへ"; ObjectID = "AON-zD-pam"; */
+"AON-zD-pam.normalTitle" = "入力フォームへ";
+
+/* Class = "UILabel"; text = "04:00"; ObjectID = "BGr-K2-Rxz"; */
+"BGr-K2-Rxz.text" = "04:00";
+
+/* Class = "UILabel"; text = "- - : - -/km"; ObjectID = "C3P-vA-aSn"; */
+"C3P-vA-aSn.text" = "- - : - -/km";
+
+/* Class = "UILabel"; text = "0.0km"; ObjectID = "CaJ-Va-71f"; */
+"CaJ-Va-71f.text" = "0.0km";
+
+/* Class = "UILabel"; text = "4steps/s"; ObjectID = "EwR-9M-DIz"; */
+"EwR-9M-DIz.text" = "4steps/s";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "IXm-Vc-Vje"; */
+"IXm-Vc-Vje.title" = "Map";
+
+/* Class = "UILabel"; text = "-steps/s"; ObjectID = "JQM-xm-ILi"; */
+"JQM-xm-ILi.text" = "-steps/s";
+
+/* Class = "UINavigationItem"; title = "Running"; ObjectID = "Jj2-oF-XXb"; */
+"Jj2-oF-XXb.title" = "Running";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "Kn9-y5-Iwh"; */
+"Kn9-y5-Iwh.title" = "Home";
+
+/* Class = "UILabel"; text = "04:28/km"; ObjectID = "LAc-qp-IAJ"; */
+"LAc-qp-IAJ.text" = "04:28/km";
+
+/* Class = "UILabel"; text = " 2020年7月8日"; ObjectID = "LHT-6m-1fN"; */
+"LHT-6m-1fN.text" = " 2020年7月8日";
+
+/* Class = "UILabel"; text = "04:28/km"; ObjectID = "N6y-dL-Zvc"; */
+"N6y-dL-Zvc.text" = "04:28/km";
+
+/* Class = "UIBarButtonItem"; title = "　"; ObjectID = "QDC-En-Cy6"; */
+"QDC-En-Cy6.title" = "　";
+
+/* Class = "UIButton"; normalTitle = "−"; ObjectID = "Qd2-as-L6H"; */
+"Qd2-as-L6H.normalTitle" = "−";
+
+/* Class = "UITabBarItem"; title = "Running"; ObjectID = "RPm-tW-2QX"; */
+"RPm-tW-2QX.title" = "Running";
+
+/* Class = "UILabel"; text = "-km ---m"; ObjectID = "S0P-XD-V6g"; */
+"S0P-XD-V6g.text" = "-km ---m";
+
+/* Class = "UILabel"; text = " ▶︎時間"; ObjectID = "SAe-vP-VIa"; */
+"SAe-vP-VIa.text" = " ▶︎時間";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "SQR-AC-VFB"; */
+"SQR-AC-VFB.normalTitle" = "Save";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "STv-h5-rxG"; */
+"STv-h5-rxG.normalTitle" = "戻る";
+
+/* Class = "UITextField"; placeholder = "🔍Search"; ObjectID = "SgJ-ZI-UW7"; */
+"SgJ-ZI-UW7.placeholder" = "🔍Search";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "USO-9A-Cm1"; */
+"USO-9A-Cm1.normalTitle" = "Start";
+
+/* Class = "UIButton"; normalTitle = "Let's Start Running!"; ObjectID = "Un9-0K-mt1"; */
+"Un9-0K-mt1.normalTitle" = "Let's Start Running!";
+
+/* Class = "UILabel"; text = "- - : - -"; ObjectID = "UoN-9V-nvd"; */
+"UoN-9V-nvd.text" = "- - : - -";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "Ydm-AH-DTN"; */
+"Ydm-AH-DTN.normalTitle" = "Stop";
+
+/* Class = "UILabel"; text = " ▶︎ペース平均"; ObjectID = "Zfy-dc-d3g"; */
+"Zfy-dc-d3g.text" = " ▶︎ペース平均";
+
+/* Class = "UILabel"; text = "16:38"; ObjectID = "cFK-GG-tY2"; */
+"cFK-GG-tY2.text" = "16:38";
+
+/* Class = "UIButton"; configuration.title = "camera"; ObjectID = "cG1-Fp-Xia"; */
+"cG1-Fp-Xia.configuration.title" = "camera";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cG1-Fp-Xia"; */
+"cG1-Fp-Xia.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = " ▶︎距離"; ObjectID = "dvi-qv-Pb8"; */
+"dvi-qv-Pb8.text" = " ▶︎距離";
+
+/* Class = "UINavigationItem"; title = "Save"; ObjectID = "dzC-B7-Ovd"; */
+"dzC-B7-Ovd.title" = "Save";
+
+/* Class = "UILabel"; text = " ▶︎毎秒歩数"; ObjectID = "fKe-2V-Yj7"; */
+"fKe-2V-Yj7.text" = " ▶︎毎秒歩数";
+
+/* Class = "UILabel"; text = " ▶︎毎秒歩数"; ObjectID = "h7L-W2-pGg"; */
+"h7L-W2-pGg.text" = " ▶︎毎秒歩数";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "jEp-w9-Vsd"; */
+"jEp-w9-Vsd.text" = "Detail";
+
+/* Class = "UIButton"; normalTitle = "＋"; ObjectID = "jPX-AF-aKT"; */
+"jPX-AF-aKT.normalTitle" = "＋";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "jPe-Lf-SS7"; */
+"jPe-Lf-SS7.title" = "Home";
+
+/* Class = "UILabel"; text = " ようこそ！"; ObjectID = "klb-hf-e9W"; */
+"klb-hf-e9W.text" = " ようこそ！";
+
+/* Class = "UILabel"; text = "4steps/s"; ObjectID = "o5B-Nn-7Z9"; */
+"o5B-Nn-7Z9.text" = "4steps/s";
+
+/* Class = "UIBarButtonItem"; title = "Back to TOP"; ObjectID = "oHN-4V-OGp"; */
+"oHN-4V-OGp.title" = "Back to TOP";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "q2K-dE-Jke"; */
+"q2K-dE-Jke.text" = "Label";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "qiF-4h-zTA"; */
+"qiF-4h-zTA.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "uR0-Yy-6U2"; */
+"uR0-Yy-6U2.normalTitle" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "Finish"; ObjectID = "ue7-iN-Sz3"; */
+"ue7-iN-Sz3.normalTitle" = "Finish";
+
+/* Class = "UILabel"; text = " ▶︎時間"; ObjectID = "ujs-mq-ccU"; */
+"ujs-mq-ccU.text" = " ▶︎時間";
+
+/* Class = "UILabel"; text = " ▶︎距離"; ObjectID = "vTT-y7-gTK"; */
+"vTT-y7-gTK.text" = " ▶︎距離";
+
+/* Class = "UILabel"; text = "04:00"; ObjectID = "w54-hq-rfU"; */
+"w54-hq-rfU.text" = "04:00";
+
+/* Class = "UIButton"; normalTitle = "取扱説明書を見る"; ObjectID = "wJy-Ai-dbE"; */
+"wJy-Ai-dbE.normalTitle" = "取扱説明書を見る";
+
+/* Class = "UILabel"; text = " ▶︎ペース平均"; ObjectID = "xgc-Js-MVF"; */
+"xgc-Js-MVF.text" = " ▶︎ペース平均";
+
+/* Class = "UILabel"; text = "0km0m"; ObjectID = "xmg-IF-EQD"; */
+"xmg-IF-EQD.text" = "0km0m";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "y0t-8u-XzX"; */
+"y0t-8u-XzX.title" = "Map";
+
+/* Class = "UINavigationItem"; title = "記録の詳細"; ObjectID = "yhb-NX-Zwe"; */
+"yhb-NX-Zwe.title" = "記録の詳細";
+
+/* Class = "UIButton"; normalTitle = "App Store へ"; ObjectID = "yv8-A9-kVQ"; */
+"yv8-A9-kVQ.normalTitle" = "App Store へ";

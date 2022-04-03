@@ -18,7 +18,23 @@ class MapViewController: UIViewController, CLLocationManagerDelegate ,UITextFiel
     @IBOutlet var plusButtonDesign: UIButton!
     @IBOutlet var minusButtonDesign: UIButton!
     
+    @IBOutlet weak var designbothsearchbar背景: UIImageView!
+    @IBOutlet weak var designbothsearchbar背景影: UIImageView!
+    
+    @IBOutlet weak var designboth切替背景: UIImageView!
+    @IBOutlet weak var designboth切替背景影: UIImageView!
+    
+    @IBOutlet weak var designboth現在地背景: UIImageView!
+    @IBOutlet weak var designboth現在地背景影: UIImageView!
+    
+    @IBOutlet weak var designbothplus背景: UIImageView!
+    @IBOutlet weak var designbothplus背景影: UIImageView!
+    
+    @IBOutlet weak var designbothminus背景: UIImageView!
+    @IBOutlet weak var designbothminus背景影: UIImageView!
+    
     let goMapCommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.tkm59zjowjis", comment: "")
+    let placeholderText = NSLocalizedString("🔍Search", comment: "")
     
     @IBAction func goMapCommentary(_ sender: Any) {
         let url = NSURL(string: "\(goMapCommentary_url)")
@@ -104,6 +120,30 @@ class MapViewController: UIViewController, CLLocationManagerDelegate ,UITextFiel
         plusButtonDesign.layer.cornerRadius = 8
         minusButtonDesign.layer.cornerRadius = 8
         
+        
+        
+        designbothsearchbar背景.layer.cornerRadius = 5
+        designbothsearchbar背景影.layer.cornerRadius = 5
+        
+        designboth切替背景.layer.cornerRadius = 8
+        designboth切替背景影.layer.cornerRadius = 8
+        
+        designboth現在地背景.layer.cornerRadius = 8
+        designboth現在地背景影.layer.cornerRadius = 8
+        
+        designbothplus背景.layer.cornerRadius = 8
+        designbothplus背景影.layer.cornerRadius = 8
+        
+        designbothminus背景.layer.cornerRadius = 8
+        designbothminus背景影.layer.cornerRadius = 8
+        
+        
+        let attributes: [NSAttributedString.Key : Any] = [
+            .font: UIFont.boldSystemFont(ofSize: 16.0),
+            .foregroundColor: UIColor.white
+        ]
+        
+        inputText.attributedPlaceholder = NSAttributedString(string: "\(placeholderText)", attributes: attributes)
         
     }
     

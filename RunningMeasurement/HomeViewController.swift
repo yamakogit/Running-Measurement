@@ -16,11 +16,31 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     @IBOutlet weak var webView: WKWebView!
     
     
+    @IBOutlet weak var designTopアップデート情報背景: UIImageView!
+    @IBOutlet weak var designTopアップデート情報背景影: UIImageView!
+    @IBOutlet weak var designBottomAppstoreへ背景: UIImageView!
+    @IBOutlet weak var designBottomAppstoreへ背景影: UIImageView!
+    @IBOutlet weak var designTop取扱説明書背景: UIImageView!
+    @IBOutlet weak var designTop取扱説明書背景影: UIImageView!
+    @IBOutlet weak var designBottom取扱説明書を見る背景: UIImageView!
+    @IBOutlet weak var designBottom取扱説明書を見る背景影: UIImageView!
+    
+    @IBOutlet weak var designTopお問い合わせ背景: UIImageView!
+    @IBOutlet weak var designTopお問い合わせ背景影: UIImageView!
+    
+    @IBOutlet weak var designBottom入力フォームへ背景: UIImageView!
+    @IBOutlet weak var designBottom入力フォームへ背景影: UIImageView!
+    
+    @IBOutlet weak var designbothホーム背景: UIImageView!
+    @IBOutlet weak var designbothホーム背景影: UIImageView!
+    
+    
     //ここから
     let verinfo_url = NSLocalizedString("https://sites.google.com/view/k-running-info-eng/%E3%83%9B%E3%83%BC%E3%83%A0", comment: "")
     let gocommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction", comment: "")
     let goform_url = NSLocalizedString("https://docs.google.com/forms/d/e/1FAIpQLSddxTl1-mQxsWgna6zRUp0vokm5yq9ppEBmbkBW-mRdDX3NDw/viewform", comment: "")
     let goNewFunction_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/update-new-functions", comment: "")
+    let gohomecommentary_url = NSLocalizedString("https://sites.google.com/view/k-running-eng/home/instruction#h.txqf0zkmue23", comment: "")
     //ここまで
     
     
@@ -32,6 +52,42 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
         if let url = URL(string: "\(verinfo_url)") {
             self.webView.load(URLRequest(url: url))
         }
+        
+        designbothホーム背景.layer.cornerRadius = 8
+        designbothホーム背景影.layer.cornerRadius = 8
+        
+        designTopアップデート情報背景.layer.cornerRadius = 8  //角を角丸に設定
+        designTopアップデート情報背景.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        designTopアップデート情報背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designTopアップデート情報背景影.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        designBottomAppstoreへ背景.layer.cornerRadius = 8  //角を角丸に設定
+        designBottomAppstoreへ背景.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        designBottomAppstoreへ背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designBottomAppstoreへ背景影.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
+        
+        designTop取扱説明書背景.layer.cornerRadius = 8  //角を角丸に設定
+        designTop取扱説明書背景.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        designTop取扱説明書背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designTop取扱説明書背景影.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        designBottom取扱説明書を見る背景.layer.cornerRadius = 8  //角を角丸に設定
+        designBottom取扱説明書を見る背景.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        designBottom取扱説明書を見る背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designBottom取扱説明書を見る背景影.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
+        
+        designTopお問い合わせ背景.layer.cornerRadius = 8  //角を角丸に設定
+        designTopお問い合わせ背景.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        designTopお問い合わせ背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designTopお問い合わせ背景影.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        designBottom入力フォームへ背景.layer.cornerRadius = 8  //角を角丸に設定
+        designBottom入力フォームへ背景.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        designBottom入力フォームへ背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designBottom入力フォームへ背景影.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
     }
     //End_webview_お知らせバナー
     //Start_button_取扱説明書へ
@@ -44,6 +100,16 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
         }
     }
     //End_button_取扱説明書へ
+    
+    @IBAction func gohomecommentary(_ sender: Any) {
+        let url = NSURL(string: "\(gohomecommentary_url)")
+        if let url = url {
+            let safariViewController = SFSafariViewController(url: url as URL)
+            safariViewController.delegate = self
+            present(safariViewController, animated: true, completion: nil)
+        }
+    }
+    
     //Start_button_入力フォームへ
     @IBAction func goform(_ sender: Any) {
         let url = NSURL(string: "\(goform_url)")
@@ -55,14 +121,14 @@ class HomeViewController: UIViewController, SFSafariViewControllerDelegate {
     }
     //End_button_入力フォームへ
     //Start_button_新機能を見る
-    @IBAction func goNewFunction(_ sender: Any) {
-        let url = NSURL(string: "\(goNewFunction_url)")
-        if let url = url {
-            let safariViewController = SFSafariViewController(url: url as URL)
-            safariViewController.delegate = self
-            present(safariViewController, animated: true, completion: nil)
-        }
-    }
+//    @IBAction func goNewFunction(_ sender: Any) {
+//        let url = NSURL(string: "\(goNewFunction_url)")
+//        if let url = url {
+//            let safariViewController = SFSafariViewController(url: url as URL)
+//            safariViewController.delegate = self
+//            present(safariViewController, animated: true, completion: nil)
+//        }
+//    }
     //End_button_新機能を見る
     //Start_button_AppStoreへ
     @IBAction func goAppStore(_ sender: Any) {

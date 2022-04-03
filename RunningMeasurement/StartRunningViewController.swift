@@ -19,8 +19,13 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
     
     @IBOutlet weak var pedometerButton: UIButton!  //スタートボタンと関連付けを行うため
     @IBOutlet var mapView: MKMapView!  //mapと関連付けを行うため
-    @IBOutlet weak var webView: WKWebView!
-    
+//    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var designtopK背景: UIImageView!
+    @IBOutlet weak var designtopK背景影: UIImageView!
+    @IBOutlet weak var designbottomblue背景: UIImageView!
+    @IBOutlet weak var designbottomblue背景影: UIImageView!
+    @IBOutlet weak var designbothyellow背景: UIImageView!
+    @IBOutlet weak var designbothyellow背景影: UIImageView!
     
     var locatioManager: CLLocationManager!  //位置情報を格納するための変数を宣言
     var alertController: UIAlertController! //alertの変数
@@ -57,12 +62,12 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
         }
     }
     
-    @IBAction func goAppstore(_ sender: Any){
-        let url = URL(string: "https://apps.apple.com/jp/app/k-running/id1539391383")!
-        if UIApplication.shared.canOpenURL(url){
-            UIApplication.shared.open(url)
-        }
-    }
+//    @IBAction func goAppstore(_ sender: Any){
+//        let url = URL(string: "https://apps.apple.com/jp/app/k-running/id1539391383")!
+//        if UIApplication.shared.canOpenURL(url){
+//            UIApplication.shared.open(url)
+//        }
+//    }
     
     override func viewDidLoad() {  //事前に追加されている
         super.viewDidLoad()  //事前に追加されている
@@ -81,10 +86,24 @@ class StartRunningViewController: UIViewController, CLLocationManagerDelegate, S
                mapView.showsUserLocation = true  //現在地を地図に表示する
         
         super.viewDidLoad()
-        if let url = URL(string: "\(verinfo_url)") {
-            self.webView.load(URLRequest(url: url))
-        }
+//        if let url = URL(string: "\(verinfo_url)") {
+//            self.webView.load(URLRequest(url: url))
+//        }
         
+//角を角丸に設定
+        designtopK背景.layer.cornerRadius = 8
+        designtopK背景.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        designtopK背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designtopK背景影.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        
+        designbottomblue背景.layer.cornerRadius = 8  //角を角丸に設定
+        designbottomblue背景.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        designbottomblue背景影.layer.cornerRadius = 8  //角を角丸に設定
+        designbottomblue背景影.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        
+        
+        designbothyellow背景.layer.cornerRadius = 8
+        designbothyellow背景影.layer.cornerRadius = 8 
     }
     
     

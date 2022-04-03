@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "clickZoomin(_:)"
+            landmarkName = "goMapCommentary(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -141,7 +141,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "clickZoomin(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -157,7 +157,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "99"
             endingLineNumber = "99"
-            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkName = "clickZoomout(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -173,7 +173,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "132"
             endingLineNumber = "132"
-            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -189,7 +189,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "viewDidLoad()"
+            landmarkName = "clickZoomin(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -205,7 +205,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
             endingLineNumber = "102"
-            landmarkName = "textFieldShouldReturn(_:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -221,7 +221,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "clickZoomin(_:)"
+            landmarkName = "goMapCommentary(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -237,8 +237,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
             endingLineNumber = "104"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "HistoryViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -253,8 +253,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
+            landmarkName = "HistoryViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -333,7 +333,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
             endingLineNumber = "54"
-            landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
+            landmarkName = "launchCamera(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -349,8 +349,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
-            landmarkName = "RunningViewController"
-            landmarkType = "3">
+            landmarkName = "launchCamera(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -381,7 +381,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "launchCamera(_:)"
+            landmarkName = "tapStopButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -554,8 +554,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "57"
             endingLineNumber = "57"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "7">
+            landmarkName = "HistoryViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -570,8 +570,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
+            landmarkName = "HistoryViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -696,8 +696,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "goRunningCommentary(_:)"
-            landmarkType = "7">
+            landmarkName = "StartRunningViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1234,7 +1234,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

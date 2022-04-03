@@ -48,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5319C81F26FDBE420083A2B7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
 		537CA32226DC5ED30021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		537CA32726DC5F230021FEBF /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53FEFE8126DF24C900D1B87F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -383,6 +384,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D3466C2224DB197100EE7685 /* Base */,
+				5319C81F26FDBE420083A2B7 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -526,15 +528,15 @@
 				CODE_SIGN_ENTITLEMENTS = RunningMeasurement/RunningMeasurement.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0;
-				DEVELOPMENT_TEAM = P2UR2SB4YG;
+				CURRENT_PROJECT_VERSION = 2.57;
+				DEVELOPMENT_TEAM = AX9FAU44AC;
 				INFOPLIST_FILE = RunningMeasurement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 4.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = apple.yamada.koki.RunningMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -550,15 +552,15 @@
 				CODE_SIGN_ENTITLEMENTS = RunningMeasurement/RunningMeasurement.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0;
-				DEVELOPMENT_TEAM = P2UR2SB4YG;
+				CURRENT_PROJECT_VERSION = 2.57;
+				DEVELOPMENT_TEAM = AX9FAU44AC;
 				INFOPLIST_FILE = RunningMeasurement/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.1.0;
+				MARKETING_VERSION = 4.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = apple.yamada.koki.RunningMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

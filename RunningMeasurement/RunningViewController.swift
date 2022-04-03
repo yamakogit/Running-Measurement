@@ -16,7 +16,7 @@ import AVFoundation  //音を使用できるようにするため
 //元:class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate{
 class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{  //Map・カメラ機能・写真機能を使用できるようにするため
 
-    @IBOutlet var runningStatusLabel: UILabel!
+    @IBOutlet var runningStatusImage: UIImageView!
     @IBOutlet var runningDistanceLabel: UILabel!
     @IBOutlet var cadenceLabel: UILabel!  //配列保存
     @IBOutlet var mapView: MKMapView!
@@ -25,6 +25,11 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
     @IBOutlet var stopresumeButton: UIButton!
     @IBOutlet var finishButton: UIButton!
     /*MARK:★*/@IBOutlet var paceLabel: UILabel!
+    
+    var letsRunImage = UIImage(named: "")
+    var goodRunImage = UIImage(named: "")
+    
+    let engOrJpn = NSLocalizedString("Eng", comment: "")
     
     let finishPlayer = try! AVAudioPlayer(data: NSDataAsset(name: "finish")!.data)
     @IBAction func tapFinishButton(){
@@ -151,7 +156,22 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             UIApplication.shared.isIdleTimerDisabled = false の時
              →遷移先の画面では画面がスリープするように(設定を解除)           */
         
+        if engOrJpn == "Eng" {
+            
+        //英語の時
+            letsRunImage = UIImage(named: "Let'sRun!")
+            goodRunImage = UIImage(named: "GoodRun!")
+            
+        } else {
+            
+        //日本語の時
+            letsRunImage = UIImage(named: "走り出そう！")
+            goodRunImage = UIImage(named: "いい走りです！")
+            }
+        
+        
     }
+    
     //画面を表示し続ける(スリープさせない)↑
     var notificationSituation = 1
     func startActivity() {
@@ -162,10 +182,10 @@ class RunningViewController: UIViewController, CLLocationManagerDelegate, MKMapV
             let isWalkingOrRunning = activity.walking || activity.running
             DispatchQueue.main.async {
                 if isWalkingOrRunning {
-                    self.runningStatusLabel.text = "\(self.goodRun)"
+                    self.runningStatusImage.image = self.goodRunImage
                     
                 } else {
-                    self.runningStatusLabel.text = "\(self.letsRun)"
+                    self.runningStatusImage.image = self.letsRunImage
                     
                 }
             }

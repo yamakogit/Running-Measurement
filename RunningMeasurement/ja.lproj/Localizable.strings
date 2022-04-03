@@ -11,6 +11,9 @@
 
 "https://sites.google.com/view/k-running-eng/home/instruction" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8";   //gocommentary_url
 
+
+"https://sites.google.com/view/k-running-eng/home/instruction#h.txqf0zkmue23" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8#h.txqf0zkmue23";//gohomecommentary_url
+
 "https://docs.google.com/forms/d/e/1FAIpQLSddxTl1-mQxsWgna6zRUp0vokm5yq9ppEBmbkBW-mRdDX3NDw/viewform" = "https://docs.google.com/forms/d/e/1FAIpQLSfifrK6fRMIoiCcKKjObHv2MHfuSXGcvMlVX9p-YRWKDifibA/viewform";  //goform_url
 "https://sites.google.com/view/k-running-eng/home/update-new-functions" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%96%B0%E6%A9%9F%E8%83%BD";  //goNewFunction_url
 
@@ -47,6 +50,7 @@
 "Now Steps/s" = "現在の毎秒歩数";  //message_nowStepspers
 "Stop" = "一時停止";
 "Resume" = "再開";
+"Eng" = "日本語";
 
 
 //MARK: SaveRunningViewController.swift
@@ -63,6 +67,8 @@
 
 //MARK: MapViewController.swift
 "https://sites.google.com/view/k-running-eng/home/instruction?authuser=0#h.tkm59zjowjis" = "https://sites.google.com/view/k-running/%E3%83%9B%E3%83%BC%E3%83%A0/%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8?authuser=0#h.tkm59zjowjis";
+
+"🔍Search" = "🔍地点を検索";
 
 
 //MARK: FirstCommentaryViewControllerViewController.swift

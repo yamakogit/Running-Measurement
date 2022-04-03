@@ -24,6 +24,22 @@ class HistorydetailsViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet var elapseTimeLabel: UILabel!
     @IBOutlet var runningFinishedTimeLabel: UILabel!
     @IBOutlet var paceLabel: UILabel!
+    @IBOutlet var showRunningDateLabel: UILabel!
+    
+    @IBOutlet weak var designboth保存時刻背景: UIImageView!
+    @IBOutlet weak var designboth保存時刻背景影: UIImageView!
+    
+    @IBOutlet weak var designboth距離背景: UIImageView!
+    @IBOutlet weak var designboth距離背景影: UIImageView!
+    
+    @IBOutlet weak var designboth時間背景: UIImageView!
+    @IBOutlet weak var designboth時間背景影: UIImageView!
+    
+    @IBOutlet weak var designbothペース平均背景: UIImageView!
+    @IBOutlet weak var designbothペース平均背景影: UIImageView!
+    
+    @IBOutlet weak var designboth毎秒歩数背景: UIImageView!
+    @IBOutlet weak var designboth毎秒歩数背景影: UIImageView!
     
     //前の画面で選択した記録のデータが入っている
     var selectedRunningData: [String: Any] = [:]  //配列保存
@@ -39,7 +55,8 @@ class HistorydetailsViewController: UIViewController, MKMapViewDelegate {
         let date = selectedRunningData["date"] as! Date  //配列保存
         
         //画面のヘッダー(NavigationBar)に走行した時の日付を表示する
-        navigationItem.title = formatDate(date: date)
+//        navigationItem.title = formatDate(date: date)
+        showRunningDateLabel.text = " \(formatDate(date: date))"
         
         //終了時刻をラベルに表示する
         let timeFormmater = DateFormatter()
@@ -165,6 +182,22 @@ class HistorydetailsViewController: UIViewController, MKMapViewDelegate {
             mapView.setRegion(MKCoordinateRegion(center: coordinates.last!, latitudinalMeters: 100, longitudinalMeters: 100), animated: true)
         }
         //〜編集 8/22 詳細 適正表示
+        
+        designboth保存時刻背景.layer.cornerRadius = 8
+        designboth保存時刻背景影.layer.cornerRadius = 8
+        
+        designboth距離背景.layer.cornerRadius = 8
+        designboth距離背景影.layer.cornerRadius = 8
+        
+        designboth時間背景.layer.cornerRadius = 8
+        designboth時間背景影.layer.cornerRadius = 8
+        
+        designbothペース平均背景.layer.cornerRadius = 8
+        designbothペース平均背景影.layer.cornerRadius = 8
+        
+        designboth毎秒歩数背景.layer.cornerRadius = 8
+        designboth毎秒歩数背景影.layer.cornerRadius = 8
+        
         }
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {  //マップに線(PolyLine)を表示する処理
         let renderer = MKPolylineRenderer(overlay: overlay)
